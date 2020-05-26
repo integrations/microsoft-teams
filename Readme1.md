@@ -28,8 +28,8 @@ This app officially supports GitHub.com and Teams.microsoft.com.
 ### Installation
 [Install the GitHub integration for Microsoft Teams](''). After you choose the GitHub for Microsoft Teams app through Teams appstore, you will be taken through the installation flow.
 
-<p align="center"><img width="450" alt="auth" src="images/install1"></p>
-<p align="center"><img width="450" alt="auth" src="images/channels"></p>
+<p align="center"><img width="450" alt="auth" src="images/install1.png"></p>
+<p align="center"><img width="450" alt="auth" src="images/channels.png"></p>
 
 After the app is installed, and once you've added the GitHub integration to the relevant channels, you will see previews of links to GitHub issues, pull-requests as rich text in your channels.
 
