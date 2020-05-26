@@ -7,18 +7,13 @@
 The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. This integration isbuilt and maintained by GitHub.
 
 ## Table of Contents
-- [Installing the GitHub integration for Slack](#installing-the-github-integration-for-slack)
+- [Installing the GitHub integration for Teams](#installing-the-github-integration-for-teams)
   - [Requirements](#requirements)
   - [Installation](#installation)
+  - [Subscribing and Unsubscribing](#subscribe)
   - [Authorization](#authorization)
-- Getting Started
-  - [Repository Activity](#repository-activity)
-  - [Link previews](#link-previews)
-  - [Take action](#take-action)
   - [Configuration](#configuration)
-  - [Migrating from the legacy GitHub integration for Slack](#migrating-from-the-legacy-github-integration-for-slack)
 - [Need help?](#questions-need-help)
-- [Contributing](#contributing)
 - [License](#license)
 --------
 ## Installing the GitHub integration for Teams
