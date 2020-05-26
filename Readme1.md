@@ -33,7 +33,8 @@ This app officially supports GitHub.com and Teams.microsoft.com.
 
 After the app is installed, and once you've added the GitHub integration to the relevant channels, you will see previews of links to GitHub issues, pull-requests as rich text in your channels.
 
-<p align="center"><img width="550" alt="unfurl_convo" src="https://user-images.githubusercontent.com/3877742/36522313-c0cdbd08-1750-11e8-8dbe-b5a3a2f93549.png"></p>
+<p align="center"><img width="550" alt="unfurl_convo" src="images/PR.PNG"></p>
+<p align="center"><img width="550" alt="unfurl_convo" src="images/Issue.PNG"></p>
 
 ### Subscribing and Unsubscribing
 
@@ -41,7 +42,7 @@ At this point, your Teams and GitHub user accounts are not linked. To link the t
 
 The `@github` command also accepts a `subscribe` argument that you can use to subscribe to an Organization or Repository's activity `@github subscribe <organization>/<repository>`.
 
-<p align="center"><img width="500" alt="unfurl_code" src="https://user-images.githubusercontent.com/3877742/36522323-ce7d4f36-1750-11e8-9eb2-b6f97c2d0053.png"></p>
+<p align="center"><img width="500" alt="unfurl_code" src="images/signin.PNG"></p>
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
@@ -75,6 +76,8 @@ As you subscribe to the organization/repository in GitHub, you will start receiv
 - `statuses` - Statuses on pull requests
 
 You can disable the notifications with `@github unsubscribe organization/repo`. In the future releases we add support for commits, deployments, release and also provide ability to customize the notifications at feature level for each organization/repository.
+
+You can view all the subscriptions available on the channel using `@github subscribe list`
 
 
 ## Questions? Need help?
