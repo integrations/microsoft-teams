@@ -1,4 +1,4 @@
-The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. This integration isbuilt and maintained by GitHub.
+The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. This integration is built and maintained by GitHub.
 
 You can subscribe to an Organization or Repository's activity using `@github subscribe <organization>/<repository>`. 
 <p align="center"><img width="500" alt="Subscribe" src="../images/Subscribe.PNG"></p>
