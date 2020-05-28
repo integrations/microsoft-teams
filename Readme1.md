@@ -4,7 +4,11 @@
 
 ## About
 
-The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. This integration isbuilt and maintained by GitHub.
+GitHub is worlds leading software developement platform. [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is one of the best communication platforms where modern developers come together, collaborate trying to build world class products and services.
+
+Today, developers spend considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). ChatOps is a team and collaboration centric way of working where in people, conversations, tools, and files are ensembled in one place i.e. workplace messaging apps.
+
+The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. This integration is built and maintained by GitHub.
 
 ## Table of Contents
 - [Installing the GitHub integration for Teams](#installing-the-github-integration-for-teams)
@@ -21,27 +25,52 @@ The GitHub integration for Microsoft Teams gives you and your teams full visibil
 This app officially supports GitHub.com and Teams.microsoft.com.
 
 ### Installation
-[Install the GitHub integration for Microsoft Teams](''). After you choose the GitHub for Microsoft Teams app through Teams appstore, you will be taken through the installation flow.
+Download the [manifest]() and upload it as a custom app and install it in the team of your choice. 
 
-<p align="center"><img width="450" alt="add" src="images/install1.PNG"></p>
-<p align="center"><img width="450" alt="channel" src="images/channels.PNG"></p>
+ ![Add as custom app]()
 
-After the app is installed, and once you've added the GitHub integration to the relevant channels, you will see previews of links to GitHub issues, pull-requests as rich text in your channels.
+Upon installing, a welcome message is displayed as shown in the following image. Use the ``@GitHub`` handle to start interacting with the app.
+
+ ![welcome message]()
+ 
+### Connect to your GitHub account
+ 
+At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a `@github signin` command.
 
 <p align="center"><img width="550" alt="unfurl_convo" src="images/PR.PNG"></p>
 <p align="center"><img width="550" alt="unfurl_convo" src="images/Issue.PNG"></p>
 
 ### Subscribing and Unsubscribing
+You can subscribe to an Organization or Repository's activity using `@github subscribe <organization>/<repository>`. 
 
-At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a `@github signin` command.
-
-The `@github` command also accepts a `subscribe` argument that you can use to subscribe to an Organization or Repository's activity `@github subscribe <organization>/<repository>`.
-
-<p align="center"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
+Before you subscribe, a Microsoft Teams app needs to be installed in GitHub. 
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
+After the app is installed, and once you've subscribed to your Organization or Repository, you will start receiving notificiations for the following activities as rich text in your channels.
+
+- `issues` - Opened, closed and reopened issues
+- `pulls` - New or merged pull requests
+
+<p align="center"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
+
+In the future releases we add support for commits, PR Checks, releases and also provide ability to customize the notifications at feature level for each repository.
+
 The `@github` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@github unsubscribe <organization>/<repository>`
+
+You can view all the subscriptions available on the channel using `@github subscribe list`
+
+
+## Command reference
+
+The following table lists all the commands you can use in your Microsoft Teams channel.
+
+|Command	| Functionality |
+| -------------------- |----------------|
+| @azure actionGroups	| View,  link or unlink action groups for a channel |
+| @azure signin	| Sign in to your Azure account |
+| @azure signout	| Sign out from your Azure account |
+| @azure feedback	| Report a problem or suggest a feature |
 
 ### Authorization
 By granting the app access, you are providing the following authorizations to your GitHub and Microsoft Teams accounts:
@@ -61,18 +90,6 @@ By granting the app access, you are providing the following authorizations to yo
 |Permission scope|Why we need it|
 |---|---|
 |Read access to issues, metadata, pull requests, and repository projects | To render previews of links shared in Teams|
-
-### Configuration
-
-As you subscribe to the organization/repository in GitHub, you will start receiving notificiations for the following activities by default.
-
-- `issues` - Opened, closed and reopened issues
-- `pulls` - New or merged pull requests
-- `statuses` - Statuses on pull requests
-
-You can disable the notifications with `@github unsubscribe organization/repo`. In the future releases we add support for commits, deployments, release and also provide ability to customize the notifications at feature level for each organization/repository.
-
-You can view all the subscriptions available on the channel using `@github subscribe list`
 
 
 ## Questions? Need help?
