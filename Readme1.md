@@ -27,7 +27,7 @@ This app officially supports GitHub.com and Teams.microsoft.com.
 ### Installation
 Download the [manifest]() and upload it as a custom app and install it in the team of your choice. 
 
- ![Add as custom app](images/Uploadmanifest.png)
+ <p align="center"><img width="500" alt="Add as custom app" src="images/Uploadmanifest.png"></p>
 
 Upon installing, a welcome message is displayed as shown in the following image. Use the ``@GitHub`` handle to start interacting with the app.
 
