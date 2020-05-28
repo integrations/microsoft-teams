@@ -43,10 +43,10 @@ At this point, your Teams and GitHub user accounts are not linked. To link the t
 <p align="center"><img width="500" alt="Finish Signin" src="images/FinishSignin.PNG"></p>
 
 ### Subscribing and Unsubscribing
-. You can subscribe to an Organization or Repository's activity using `@github subscribe <organization>/<repository>`. 
+You can subscribe to an Organization or Repository's activity using `@github subscribe <organization>/<repository>`. 
 <p align="center"><img width="500" alt="Install" src="images/Install.PNG"></p>
 
-. Before you subscribe, a Microsoft Teams app needs to be installed in GitHub. 
+Before you subscribe, a Microsoft Teams app needs to be installed in GitHub. 
 <p align="center"><img width="500" alt="Teams App for GitHub" src="images/TeamsAppForGitHub.PNG"></p>
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
