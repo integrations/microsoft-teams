@@ -27,38 +27,47 @@ This app officially supports GitHub.com and Teams.microsoft.com.
 ### Installation
 Download the [manifest]() and upload it as a custom app and install it in the team of your choice. 
 
- ![Add as custom app]()
+ ![Add as custom app](images/Uploadmanifest.png)
 
 Upon installing, a welcome message is displayed as shown in the following image. Use the ``@GitHub`` handle to start interacting with the app.
 
- ![welcome message]()
+ ![welcome message](images/success.PNG)
  
 ### Connect to your GitHub account
  
 At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a `@github signin` command.
 
-<p align="center"><img width="550" alt="unfurl_convo" src="images/PR.PNG"></p>
-<p align="center"><img width="550" alt="unfurl_convo" src="images/Issue.PNG"></p>
+![Signin](images/Signin.PNG)
+![Connect to GitHub](images/ConnectGitHub.PNG)
+![Authorize](images/Authorize.PNG)
+![Finish Signin](images/FinishSignin.PNG)
 
 ### Subscribing and Unsubscribing
 You can subscribe to an Organization or Repository's activity using `@github subscribe <organization>/<repository>`. 
+![Install](images/Install.PNG)
+
 
 Before you subscribe, a Microsoft Teams app needs to be installed in GitHub. 
+![Teams App for GitHub](images/TeamsAppForGitHub.PNG)
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
+
+![Subscribe](images/Subscribe.PNG)
 
 After the app is installed, and once you've subscribed to your Organization or Repository, you will start receiving notificiations for the following activities as rich text in your channels.
 
 - `issues` - Opened, closed and reopened issues
 - `pulls` - New or merged pull requests
+![Issue](images/Issue.PNG)
+![PR](images/PR.PNG)
 
-<p align="center"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
-
-In the future releases we add support for commits, PR Checks, releases and also provide ability to customize the notifications at feature level for each repository.
+In the future releases we will add support for commits, PR Checks, releases and also provide ability to customize the notifications at feature level for each repository.
 
 The `@github` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@github unsubscribe <organization>/<repository>`
+![UnSubscribe](images/UnSubscribe.PNG)
 
 You can view all the subscriptions available on the channel using `@github subscribe list`
+![Subscribe list](images/subscribelist.PNG)
 
 
 ## Command reference
