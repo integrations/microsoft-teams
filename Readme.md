@@ -6,7 +6,9 @@ GitHub is worlds leading software developement platform. [Microsoft Teams](https
 
 Today, developers spend considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). ChatOps is a team and collaboration centric way of working where in people, conversations, tools, and files are ensembled in one place i.e. workplace messaging apps.
 
-The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. This integration is built and maintained by GitHub.
+The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. 
+
+This integration is built and maintained by GitHub.
 
 ## Table of Contents
 - [Installing the GitHub integration for Teams](#installing-the-github-integration-for-teams)
