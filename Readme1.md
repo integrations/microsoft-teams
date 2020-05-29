@@ -13,11 +13,11 @@ The GitHub integration for Microsoft Teams gives you and your teams full visibil
   - [Requirements](#requirements)
   - [Installation](#installation)
  - [Get Started](#get-started) 
-  - [Connect your GitHub account](#Connect-your-github-account)
-  - [Subscribing and Unsubscribing](#Subscribing-and-Unsubscribing)
-  - [Notifications](#Notifications)
-  - [Command Reference](#commands)
-  - [Authorization](#authorization)
+   - [Connect your GitHub account](#Connect-your-github-account)
+   - [Subscribing and Unsubscribing](#Subscribing-and-Unsubscribing)
+   - [Notifications](#Notifications)
+   - [Command Reference](#commands)
+   - [Authorization](#authorization)
 - [Limitations](#limitations)
 - [Future work](#future-work)
 - [Feedback](#Feedback-and-queries)
@@ -64,7 +64,7 @@ You can view all the subscriptions available on the channel using `@github subsc
 ## Notifications
 After the app is installed, and once you've subscribed to your Organization or Repository, you will start receiving notificiations for the following activities as rich text in your channels.
 - `issues` - Opened, closed and reopened issues
-- `pulls` - New, draft, merged and closed pull requests
+- `pulls` - New, merged and closed pull requests
 
 <p align="left"><img width="500" alt="Issue" src="images/Issue.PNG"></p>
 <p align="left"><img width="500" alt="PR" src="images/PR.PNG"></p>
