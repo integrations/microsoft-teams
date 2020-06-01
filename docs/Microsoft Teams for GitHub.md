@@ -23,8 +23,8 @@ The following table lists all the commands you can use in your Microsoft Teams c
 
 |Command	| Functionality |
 | -------------------- |----------------|
-| @github signin	| Connect to your GitHub Account |
-| @github signout	| Disconnect with your GitHub Account and remove all subscriptions |
 | @github subscribe <organization>/<Repository>	| Subscribe to and Organization or Repository |
 | @github subscribe list	| List the subscriptions in the channel |
 | @github unsubscribe <Organization>/<Repository>	| Unsubscribe from Organization or Repository |
+| @github signin	| Connect to your GitHub Account |
+| @github signout	| Disconnect with your GitHub Account and remove all subscriptions |
