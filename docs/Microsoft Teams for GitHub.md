@@ -5,7 +5,7 @@ You can subscribe to an Organization or Repository's activity using `@github sub
 
 After the app is installed, and once you've subscribed to your Organization or Repository, you will start receiving notificiations for the following activities as rich text in your channels.
 - `issues` - Opened, closed and reopened issues
-- `pulls` - New, merged and closed pull requests
+- `pulls` - New, merged, closed pull requests
 
 <p align="left"><img width="500" alt="Issue" src="../images/Issue.PNG"></p>
 <p align="left"><img width="500" alt="PR" src="../images/PR.PNG"></p>
@@ -23,8 +23,8 @@ The following table lists all the commands you can use in your Microsoft Teams c
 
 |Command	| Functionality |
 | -------------------- |----------------|
-| @github signin	| Connect to your GitHub Account |
-| @github signout	| Disconnect with your GitHub Account and remove all subscriptions |
 | @github subscribe <organization>/<Repository>	| Subscribe to and Organization or Repository |
 | @github subscribe list	| List the subscriptions in the channel |
 | @github unsubscribe <Organization>/<Repository>	| Unsubscribe from Organization or Repository |
+| @github signin	| Connect to your GitHub Account |
+| @github signout	| Disconnect with your GitHub Account and remove all subscriptions |

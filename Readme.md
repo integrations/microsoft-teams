@@ -1,12 +1,10 @@
 # GitHub + Microsoft Teams Integration (Private Preview)
 
-## About
+## Your ultimate productivity pair
 
-GitHub is worlds leading software developement platform. [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is one of the best communication platforms where modern developers come together, collaborate trying to build world class products and services.
+GitHub is the world's leading software development platform. [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is one of the more popular communication platforms where modern development teams come together to build world-class products and services. With two of your most important workspaces connected, you'll stay updated on what's happening on GitHub without leaving Microsoft Teams. 
 
-Today, developers spend considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). ChatOps is a team and collaboration centric way of working where in people, conversations, tools, and files are ensembled in one place i.e. workplace messaging apps.
-
-The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. 
+Developers spend a considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in your Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. 
 
 This integration is built and maintained by GitHub.
 
@@ -27,10 +25,10 @@ This integration is built and maintained by GitHub.
 --------
 ## Installing the GitHub integration for Teams
 ### Requirements
-This app officially supports GitHub.com and Teams.microsoft.com.
+This app officially supports github.com and teams.microsoft.com.
 
 ### Installation
-Download the [manifest]() and upload it as a custom app and install it in the team of your choice. 
+Download the [manifest](https://github.com/integrations/microsoft-teams/raw/master/blob/manifest.zip) and upload it as a custom app and install it in the team of your choice. 
 
  <p align="left"><img width="500" alt="Add as custom app" src="images/Uploadmanifest.png"></p>
  <p align="left"><img width="500" alt="welcome message" src="images/success.PNG"></p>
@@ -46,7 +44,7 @@ At this point, your Teams and GitHub user accounts are not linked. To link the t
 <p align="left"><img width="500" alt="Authorize" src="images/Authorize.PNG"></p>
 <p align="left"><img width="500" alt="Finish Signin" src="images/FinishSignin.PNG"></p>
 
-### Subscribing and Unsubscribing
+### Subscribing to notifications
 You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@github subscribe <organization>/<repository>` command. 
 <p align="left"><img width="500" alt="Install" src="images/Install.PNG"></p>
 
@@ -63,8 +61,7 @@ The `@github` command also supports `unsubscribe`. To unsubscribe to notificatio
 You can view all the subscriptions available on the channel using `@github subscribe list`
 <p align="left"><img width="500" alt="Subscribe list" src="images/subscribelist.PNG"></p>
 
-## Notifications
-After the app is installed, and once you've subscribed to your Organization or Repository, you will start receiving notificiations for the following activities as rich text in your channels.
+After the app is installed, and once you've subscribed to your Organization or Repository, you will start receiving notifications for the following activities as rich text in your channels.
 - `issues` - Opened, closed and reopened issues
 - `pulls` - New, merged and closed pull requests
 
@@ -88,7 +85,7 @@ The following table lists all the commands you can use in your Microsoft Teams c
 ### Authorization
 By granting the app access, you are providing the following authorizations to your GitHub and Microsoft Teams accounts:
 
-#### Teams Permission Scopes
+#### Teams permission scopes
 
 |Permission scope|Why we need it|
 |---|---|
@@ -98,7 +95,7 @@ By granting the app access, you are providing the following authorizations to yo
 |View the organization's name, email domain, and icon| To store subscriptions you set up|
 |Post messages as the app| To notify you of activity that happens on GitHub|
 
-#### GitHub Permission Scopes
+#### GitHub permission scopes
 
 |Permission scope|Why we need it|
 |---|---|
@@ -107,19 +104,19 @@ By granting the app access, you are providing the following authorizations to yo
 ## Limitations
 Being a private preview, the app has certain limitations as detailed below. We will continue to invest in the app to remove some of these constraints.
 
-* The app needs to be sideloaded and is not avaialble in Teams app store as we are in private preview.
-* Markdown is not extensively supported in Teams currently so some styles like checkboxes, blockquotes might not be rendered properly. Request you to share issues found so that we can improve the experience.  
+* The app needs to be sideloaded and is not available in Teams app store as we are in private preview.
+* Markdown is not extensively supported in Teams currently so some styles like checkboxes, blockquotes might not be rendered properly. Let us know if find issues
 
 ## Future work
-We’re constantly at work to improve the app, and soon you’ll see new features stated below. If you would like to see additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new).  
+We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new).
 
-* Actions for Issues and PR
-* Additional notification and ability to filter 
+Some ideas under consideration:
+
+* Actions for issues and PR
+* Additional notification types and more options for filtering
 * @mention support
 * URL unfurling
 
-## Feedback and queries
-Please [file an issue](https://github.com/integrations/microsoft-teams/issues/new) and we will get back to you. 
+## Feedback
 
-## License
-When using the GitHub logos, be sure to follow the [GitHub logo guidelines](https://github.com/logos).
+Please [create an issue](https://github.com/integrations/microsoft-teams/issues/new) to request a feature or report a problem.
