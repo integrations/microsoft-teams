@@ -28,7 +28,7 @@ This integration is built and maintained by GitHub.
 This app officially supports github.com and teams.microsoft.com.
 
 ### Installation
-Download the [manifest](https://github.com/integrations/microsoft-teams/raw/master/blob/manifest.zip) and upload it as a custom app and install it in the team of your choice. 
+Upload the manifest file as a custom app and install it in the team of your choice. 
 
  <p align="left"><img width="500" alt="Add as custom app" src="images/Uploadmanifest.png"></p>
  <p align="left"><img width="500" alt="welcome message" src="images/success.PNG"></p>
