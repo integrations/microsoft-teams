@@ -38,7 +38,6 @@ Upon installing, a welcome message is displayed as shown in the following image.
  
 ## Get Started 
 At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a @github signin command.
-<p align="left"><img width="500" alt="Signin" src="images/Signin.PNG"></p>
 <p align="left"><img width="500" alt="Signin success" src="images/SigninSuccess.PNG"></p>
 
 ### Subscribe notifications
@@ -73,7 +72,7 @@ These are disabled by default, and can be enabled with the '@github subscribe ow
 - reviews - Pull request reviews
 - +label:"your label" - Filter issues, pull-requests and comments based on their labels.
 
-To see the currently active filters use `@github subscribe list features`
+To see the list of subscribed features, use `@github subscribe list features`
 <p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
 
 ### Filters
@@ -116,8 +115,6 @@ Teams conversations often lead to decisions and actionable takeaways. You can pe
 
 <p align="left"><img width="500" alt="Issue Card" src="images/IssueCard.PNG"></p>
 
-<p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
-
 Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
 ### Link previews
@@ -128,6 +125,7 @@ When you share links to GitHub activities and properties in the channel, more de
 - code snippets
 - repositories
 - accounts or organizations
+
 <p align="left"><img width="500" alt="Comment Link" src="images/CommentLink.PNG"></p>
 
 
