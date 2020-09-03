@@ -31,28 +31,26 @@ This app officially supports GitHub.com (which includes our GitHub Enterprise cl
 ### Installation
 You can go to Microsoft teams app store and install GitHub (Preview) app or you can directly install from [here](TBD). 
 
- <p align="left"><img width="500" alt="Teams app install" src="images/Uploadmanifest.png"></p>
- <p align="left"><img width="500" alt="welcome message" src="images/success.PNG"></p>
+<p align="left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
 
 Upon installing, a welcome message is displayed as shown in the following image. Use the ``@GitHub`` handle to start interacting with the app.
+<p align="left"><img width="500" alt="Install success" src="images/InstallSuccess.PNG"></p>
  
 ## Get Started 
 At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a @github signin command.
 <p align="left"><img width="500" alt="Signin" src="images/Signin.PNG"></p>
-<p align="left"><img width="500" alt="Connect to GitHub" src="images/ConnectGitHub.PNG"></p>
-<p align="left"><img width="500" alt="Authorize" src="images/Authorize.PNG"></p>
-<p align="left"><img width="500" alt="Finish Signin" src="images/FinishSignin.PNG"></p>
+<p align="left"><img width="500" alt="Signin success" src="images/SigninSuccess.PNG"></p>
 
 ### Subscribe notifications
 You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@github subscribe <organization>/<repository>` command. 
-<p align="left"><img width="500" alt="Install" src="images/Install.PNG"></p>
+<p align="left"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
 
 Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and you need to grant access to the repositories you would like to subscribe. 
-<p align="left"><img width="500" alt="Teams App for GitHub" src="images/TeamsAppForGitHub.PNG"></p>
+<p align="left"><img width="500" alt="Install App" src="images/InstallApp.PNG"></p>
 
-If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository. You need to be an organization / account owner to install the app. If you dont have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
+If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository. 
 
-<p align="left"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
+You need to be an organization / account owner to install the app. If you dont have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
 
 The `@github` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@github unsubscribe <organization>/<repository>`
 
@@ -62,6 +60,8 @@ You can customize your notifications by subscribing to activity that is relevant
 You can configure them using following commands:
 `@github subscribe owner/repo [feature]`
 `@github unsubscribe owner/repo [feature]`
+
+<p align="left"><img width="500" alt="Customize notifications" src="images/CustomizeNotifications.PNG"></p>
 
 Below features are enabled by default, and can be disabled with the `@github unsubscribe owner/repo [feature]` command:
 - issues - Opened / closed / ReOpened 
@@ -97,13 +97,14 @@ It is common to have certain special characters in labels. Therefore we added su
 - label:"very important"
 - label:":construction: WIP"
 
-<p align="left"><img width="500" alt="Issue" src="images/Issue.PNG"></p>
-<p align="left"><img width="500" alt="PR" src="images/PR.PNG"></p>
-
 ### PR and Issue notification cards and Threading
 Notifications for any PR and Issue are grouped under a parent card as replies. The parent card always shows the latest status of the PR/Issue along with other meta-data like title, description, assignees, reviewers, labels and checks. Threading gives context and helps improve collaboration in the channel.
 
+<p align="left"><img width="500" alt="PR Card" src="images/PRCard.PNG"></p>
+
 Any new event that happens on a pull request or issue (like comment/review/close/merge) is added as a reply to the parent card. 
+<p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
+
 Note: In case of Draft PRs, updates are not notified in the channel. Once the Draft PR is moved to ready, the channel will start getting the notifications
 
 ### Take action
@@ -112,6 +113,9 @@ Teams conversations often lead to decisions and actionable takeaways. You can pe
 - Close and ReOpen issue
 - Comment on issue and pull request
 
+<p align="left"><img width="500" alt="Issue Card" src="images/IssueCard.PNG"></p>
+
+<p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
 
 Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
@@ -123,8 +127,7 @@ When you share links to GitHub activities and properties in the channel, more de
 - code snippets
 - repositories
 - accounts or organizations
-
-
+<p align="left"><img width="500" alt="Comment Link" src="images/CommentLink.PNG"></p>
 
 
 Previews of links will not be shown if the repository is private and the user that shared the link:
