@@ -74,6 +74,7 @@ These are disabled by default, and can be enabled with the '@github subscribe ow
 - +label:"your label" - Filter issues, pull-requests and comments based on their labels.
 
 To see the currently active filters use `@github subscribe list features`
+<p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
 
 ### Filters
 Label filters allow filtering incoming events based on a whitelisted label. You can add a lable filter with subscribe command
