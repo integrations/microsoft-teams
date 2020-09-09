@@ -107,7 +107,7 @@ Any new event that happens on a pull request or issue (like comment/review/close
 
 Note: In case of Draft PRs, updates are not notified in the channel. Once the Draft PR is moved to ready, the channel will start getting the notifications
 
-### Take action
+### Move conversations into next steps
 Teams conversations often lead to decisions and actionable takeaways. You can perform following actions on GitHub directly from Microsoft Teams:
 - Create issue
 - Close and ReOpen issue
@@ -117,7 +117,7 @@ Teams conversations often lead to decisions and actionable takeaways. You can pe
 
 Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
-### Link previews
+### Unfurling GitHub links
 When you share links to GitHub activities and properties in the channel, more details are automatically extracted and shown as preview in Microsoft Teams channel. We support link previews for:
 - pull requests
 - issues
