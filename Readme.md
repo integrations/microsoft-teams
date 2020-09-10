@@ -16,13 +16,13 @@ This integration is built and maintained by GitHub.
    - [Subscribe notifications](#subscribe-notifications)
    - [Customize notifications](#customize-notifications)
    - [Filters](#filters)
-   - [PR and Issue notification cards and Threading](pr-and-issue-notification-cards)
-   - [Take action](#take-action)
-   - [Link previews](#link-previews)
-   - [Command Reference](#commands)
+   - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
+   - [Move conversations into next steps](#move-conversations-into-next-steps)
+   - [Unfurling GitHub links](#unfurling-github-links)
+   - [Command Reference](#command-reference)
    - [Authorization](#authorization)
 - [Future work](#future-work)
-- [Feedback](#Feedback-and-queries)
+- [Feedback](#feedback)
 --------
 ## Installing the GitHub integration for Teams
 ### Requirements
