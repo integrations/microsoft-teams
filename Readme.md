@@ -19,6 +19,7 @@ This integration is built and maintained by GitHub.
    - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
    - [Move conversations into next steps](#move-conversations-into-next-steps)
    - [Unfurling GitHub links](#unfurling-github-links)
+   - [Personal app experience](#personal-app-experience)
    - [Command Reference](#command-reference)
    - [Authorization](#authorization)
 - [Future work](#future-work)
@@ -133,6 +134,9 @@ Previews of links will not be shown if the repository is private and the user th
 - Not signed in to their GitHub account
 - The repository is not authorized i.e the Microsoft Teams app is not installed in the GitHub repo.
 
+### Personal app experience
+As part of personal app experience, you can `signin` and `signout` from GitHub. You can signin to GitHub with Personal app chat and avoid separate signin in your channels.
+We will add other capabilities like subscribe and actions in future.
 
 ### Command reference
 
@@ -174,7 +178,7 @@ We're constantly at work to improve the app, and soon you’ll see new features 
 Some ideas under consideration:
 
 * Schedule reminders
-* Personal app
+* Personal app support for subscribe
 * GitHub Actions support
 * Support for GHES
 
