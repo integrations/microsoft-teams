@@ -173,7 +173,7 @@ By granting the app access, you are providing the following authorizations to yo
 |Read access to issues, metadata, pull requests, and repository projects | To render previews of links shared in Teams|
 
 ## Future work
-We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new).
+We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new/choose).
 
 Some ideas under consideration:
 
