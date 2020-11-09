@@ -66,7 +66,7 @@ You can configure them using following commands:
 Below features are enabled by default, and can be disabled with the `@github unsubscribe owner/repo [feature]` command:
 - issues - Opened / closed / ReOpened 
 - pulls - New / merged / Close / ReOpen 
-- commits - New commits on the default branch (usually master)
+- commits - New commits on the default branch (usually main)
 - comments - New comments on issues and pull requests
 
 These are disabled by default, and can be enabled with the '@github subscribe owner/repo [feature]' command:
@@ -77,6 +77,17 @@ To see the list of subscribed features, use `@github subscribe list features`
 <p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
 
 ### Filters
+#### Branch filters for commits 
+Branch filters allow filtering commit notifications. By default when you subscribe for commits feature, you will get notifications for your default branch (i.e. main). However, you can choose to filter on a specific branch, or a pattern of branches or all branches.
+
+- `@github subscribe org/repo commits`  for commit notifications from a default branch.
+- `@github subscribe org/repo commits:*`  for commit notifications across all the branches.
+- `@github subscribe org/repo commits:myBranch`  for commit notifications from a specific branch.
+- `@github subscribe org/repo commits:users/*`  for commit notifications from a pattern of branches.
+
+You can unsubscribe commits feature using `@github unsubscribe org/repo commits.
+
+#### Label filters for issues and prs
 Label filters allow filtering incoming events based on a whitelisted label. You can add a lable filter with subscribe command
 `@github subscribe owner/repo +label:priority:HIGH`
 
