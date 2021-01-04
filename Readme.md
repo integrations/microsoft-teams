@@ -146,8 +146,16 @@ Previews of links will not be shown if the repository is private and the user th
 - The repository is not authorized i.e the Microsoft Teams app is not installed in the GitHub repo.
 
 ### Personal app experience
-As part of personal app experience, you can `signin` and `signout` from GitHub. You can signin to GitHub with Personal app chat and avoid separate signin in your channels.
-We will add other capabilities like subscribe and actions in future.
+As part of personal app experience, you can now subscribe to your repositories and receive notifications for:
+- issues
+- pull requests
+- commits
+
+All the commands available in your channel are now available for Personal chat for GitHub.
+<p align="left"><img width="500" alt="PR Card" src="images/PersonalApp.PNG"></p>
+
+You can also signin to GitHub with Personal app chat and avoid separate signin in your channels.
+
 
 ### Command reference
 
