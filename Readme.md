@@ -19,6 +19,7 @@ This integration is built and maintained by GitHub.
    - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
    - [Move conversations into next steps](#move-conversations-into-next-steps)
    - [Unfurling GitHub links](#unfurling-github-links)
+   - [Schedule Reminders](#schedule-reminders)
    - [Personal app experience](#personal-app-experience)
    - [Command Reference](#command-reference)
    - [Authorization](#authorization)
@@ -144,6 +145,41 @@ When you share links to GitHub activities and properties in the channel, more de
 Previews of links will not be shown if the repository is private and the user that shared the link:
 - Not signed in to their GitHub account
 - The repository is not authorized i.e the Microsoft Teams app is not installed in the GitHub repo.
+
+### Schedule Reminders
+You can now schedule reminders for pending pull requests. With this feature you can now get periodic reminders of pending pull requests as part of your channel or personal chat.
+
+#### Channel reminders
+From Teams' channel, user can run following command to configure a reminder for pending pull requests on your Organization or Repository. 
+`@github schedule organization/repository`
+
+This will create reminder for weekdays at 9.30 AM. However, if you want to configure reminder for a different day or time, you can achieve that by passing day and time as explained below.
+`@github schedule organization/repository <Day format> <Timeformat>`
+
+|Command	| Functionality |
+| -------------------- |----------------|
+|`@github schedule <organization>`| Creates a default reminder on the organization for weekdays at 9.30 AM |
+|`@github schedule <organization>/<Repository>`| Creates a default reminder on the repository for weekdays at 9.30 AM |
+|`@github schedule <organization>/<Repository> everyday 14:30`| Creates reminder on the repository for everyday at 2:30 PM |
+|`@github schedule <organization>/<Repository> Mon,Tue 14:30`| Creates reminder on the repository for Monday and Tuesday at 2:30 PM |
+|`@github schedule <organization> Mon-Wed,Fri 9,14:30`| Creates reminder on the organization for Monday, Tuesday, Wednesday and Friday at 9:00 AM and 2:30 PM |
+
+- In a channel only organization admin can configure reminders.
+- The day formats supported are weekdays, weekends, everyday and individual days or the sequence can be given with Mon ,Tue ,Wed,Thu,Fri,Sat,Sun.
+- The time format is 24 scale and we only support 30 minute intervals. The timezone is automatically taken from the Microsoft Teams timzone.
+
+You can remove reminders from a channel by running the following command
+`@github unschedule organization/repository`
+
+You can get the list of reminders configured in a channel by running
+`@github schedule list`
+
+#### Personal reminders
+You can configure similar reminders in your personal chat too. 
+
+- In personal chat, reminders can be configured only at the organization level. Repository level filter is not supported.
+- You need to be a member of the organization to configure reminders in the personal chat.
+
 
 ### Personal app experience
 As part of personal app experience, you can now subscribe to your repositories and receive notifications for:
