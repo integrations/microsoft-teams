@@ -31,7 +31,7 @@ This integration is built and maintained by GitHub.
 This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Teams.microsoft.com.
 
 ### Installation
-You can go to Microsoft teams app store and install GitHub (Preview) app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25). 
+You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25). 
 
 <p align="left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
 
