@@ -19,8 +19,8 @@ This integration is built and maintained by GitHub.
    - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
    - [Move conversations into next steps](#move-conversations-into-next-steps)
    - [Unfurling GitHub links](#unfurling-github-links)
-   - [Schedule Reminders](#schedule-reminders)
    - [Personal app experience](#personal-app-experience)
+   - [Schedule Reminders](#schedule-reminders)
    - [Command Reference](#command-reference)
    - [Authorization](#authorization)
 - [Future work](#future-work)
@@ -146,6 +146,17 @@ Previews of links will not be shown if the repository is private and the user th
 - Not signed in to their GitHub account
 - The repository is not authorized i.e the Microsoft Teams app is not installed in the GitHub repo.
 
+### Personal app experience
+As part of personal app experience, you can now subscribe to your repositories and receive notifications for:
+- issues
+- pull requests
+- commits
+
+All the commands available in your channel are now available for Personal chat for GitHub.
+<p align="left"><img width="500" alt="PR Card" src="images/PersonalApp.PNG"></p>
+
+You can also signin to GitHub with Personal app chat and avoid separate signin in your channels.
+
 ### Schedule Reminders
 You can now schedule reminders for pending pull requests. With this feature you can now get periodic reminders of pending pull requests as part of your channel or personal chat.
 <p align="left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
@@ -180,18 +191,6 @@ You can configure similar reminders in your personal chat too.
 
 - In personal chat, reminders can be configured only at the organization level. Repository level filter is not supported.
 - You need to be a member of the organization to configure reminders in the personal chat.
-
-
-### Personal app experience
-As part of personal app experience, you can now subscribe to your repositories and receive notifications for:
-- issues
-- pull requests
-- commits
-
-All the commands available in your channel are now available for Personal chat for GitHub.
-<p align="left"><img width="500" alt="PR Card" src="images/PersonalApp.PNG"></p>
-
-You can also signin to GitHub with Personal app chat and avoid separate signin in your channels.
 
 
 ### Command reference
