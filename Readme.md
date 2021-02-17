@@ -148,6 +148,7 @@ Previews of links will not be shown if the repository is private and the user th
 
 ### Schedule Reminders
 You can now schedule reminders for pending pull requests. With this feature you can now get periodic reminders of pending pull requests as part of your channel or personal chat.
+<p align="left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
 
 #### Channel reminders
 From Teams' channel, user can run following command to configure a reminder for pending pull requests on your Organization or Repository. 
