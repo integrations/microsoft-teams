@@ -232,8 +232,6 @@ We're constantly at work to improve the app, and soon you’ll see new features 
 
 Some ideas under consideration:
 
-* Schedule reminders
-* Personal app support for subscribe
 * GitHub Actions support
 * Support for GHES
 
