@@ -1,4 +1,4 @@
-# GitHub + Microsoft Teams Integration (Public Preview)
+# GitHub + Microsoft Teams Integration
 
 ## Help Your Teams Communicate and Collaborate Better
 
