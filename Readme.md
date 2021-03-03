@@ -1,4 +1,4 @@
-# GitHub + Microsoft Teams Integration (Public Preview)
+# GitHub + Microsoft Teams Integration
 
 ## Help Your Teams Communicate and Collaborate Better
 
@@ -6,7 +6,7 @@ GitHub is the world's leading software development platform. [Microsoft Teams](h
 
 Developers spend a considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in your Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. 
 
-This integration is built and maintained by GitHub.
+GitHub integration for Microsoft Teams is now GA and is built and maintained by GitHub.
 
 ## Table of Contents
 - [Installing the GitHub integration for Teams](#installing-the-github-integration-for-teams)
