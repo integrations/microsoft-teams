@@ -17,6 +17,7 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
    - [Customize notifications](#customize-notifications)
    - [Filters](#filters)
    - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
+   - [Deployments and actions approval notifications](#deployments-and-actions-approval-notifications)
    - [Move conversations into next steps](#move-conversations-into-next-steps)
    - [Unfurling GitHub links](#unfurling-github-links)
    - [Personal app experience](#personal-app-experience)
@@ -119,6 +120,8 @@ Any new event that happens on a pull request or issue (like comment/review/close
 <p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
 
 Note: In case of Draft PRs, updates are not notified in the channel. Once the Draft PR is moved to ready, the channel will start getting the notifications
+
+### Deployments and actions approval notifications
 
 ### Move conversations into next steps
 Teams conversations often lead to decisions and actionable takeaways. You can perform following actions on GitHub directly from Microsoft Teams:
