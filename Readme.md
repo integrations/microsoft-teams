@@ -146,7 +146,7 @@ New subscriptions:
 - You cannot add a new subscription until you grant permissions as "deployments" is a default feature. We will notify you to update when you try to add new susbcription.
 
 You can directly update the app by going to your GiHub organization->settings->installed apps and update Microsoft Teams app for GitHub.
-<p align="left"><img width="500" alt="Update App" src="images/UpdateApp.PNG"></p>
+<p align="left"><img width="500" alt="Update App" src="images/UpdateApp.png"></p>
 
 
 ### Move conversations into next steps
