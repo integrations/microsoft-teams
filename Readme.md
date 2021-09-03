@@ -146,7 +146,7 @@ To receive the above notification you need to grant access for Teams integration
 - Your existing subscriptions will continue to work. However you will not recieve deployment notification until you grant permissions.
 <p align="left"><img width="500" alt="Permissions" src="images/Permissions.png"></p>
 
-- You cannot modify your existing subscriptions untill you update the app and grant permissions. We will notify you to update when you try to modify an existing susbcription.
+- You cannot modify your existing subscriptions until you update the app and grant permissions. We will notify you to update when you try to modify an existing susbcription.
 <p align="left"><img width="500" alt="Update app" src="images/TeamsUpdateApp.png"></p>
 
 - However, if you choose not to update the app, you unsubscribe "deployments" feature for the existing subscriptions and then you will be able to modify your subscription.
