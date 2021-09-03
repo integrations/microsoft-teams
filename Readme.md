@@ -129,8 +129,13 @@ These notifications are available as part for "deployments" feature which is ena
 
 The following are the notifications available as part of "deployments" feature:
 1. Deployment review pending notifications for your environments being deployed through GitHub Actions workflow.
+<p align="left"><img width="500" alt="Review Pending" src="images/TeamsReviewPending.png"></p>
+
 2. Deployment review completed notifications for your environments being deployed through GitHub Actions workflow.
+<p align="left"><img width="500" alt="Approval completed" src="images/TeamsReviewCompleted.png"></p>
+
 3. Deployment status notifications for your environments. And the notification shows workflow information if the environment is deployed from GitHub Action workflow.
+<p align="left"><img width="500" alt="Deployment status" src="images/TeamsDeploymentStatus.png"></p>
 
 #### Updates to the app permissions for deployment notifications
 To receive the above notification you need to grant access for Teams integration in your GitHub organization. 
@@ -139,7 +144,10 @@ To receive the above notification you need to grant access for Teams integration
 
 Existing susbcriptions: 
 - Your existing subscriptions will continue to work. However you will not recieve deployment notification until you grant permissions.
+<p align="left"><img width="500" alt="Permissions" src="images/Permissions.png"></p>
 - You cannot modify your existing subscriptions untill you update the app and grant permissions. We will notify you to update when you try to modify an existing susbcription.
+<p align="left"><img width="500" alt="Update app" src="images/TeamsUpdateApp.png"></p>
+
 - However, if you choose not to update the app, you unsubscribe "deployments" feature for the existing subscriptions and then you will be able to modify your subscription.
 
 New subscriptions:
