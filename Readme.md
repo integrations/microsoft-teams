@@ -70,10 +70,15 @@ Below features are enabled by default, and can be disabled with the `@github uns
 - pulls - New / merged / Close / ReOpen 
 - commits - New commits on the default branch (usually main)
 - comments - New comments on issues and pull requests
+- deployments - Deployment statuses and Actions deployment review notifications
+- releases - New release and pre-release published
 
 These are disabled by default, and can be enabled with the '@github subscribe owner/repo [feature]' command:
 - reviews - Pull request reviews
+- branches - branch creation and deletion
 - +label:"your label" - Filter issues, pull-requests and comments based on their labels.
+
+We also support repository notifications. You will get notified when your repo is made public or deleted. This notification is enabled by default and there is no separate feature to turn in off. Since repository update is a destructive activity, we want to notify the customer always. 
 
 To see the list of subscribed features, use `@github subscribe list features`
 <p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
@@ -265,13 +270,17 @@ By granting the app access, you are providing the following authorizations to yo
 |---|---|
 |Read access to issues, metadata, pull requests, and repository projects | To render previews of links shared in Teams|
 
-## Future work
+## Upcoming features and roadmap
 We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new/choose).
+  
+* @ mentions support - notify the user when he/she is assigned an issue, added as a reviewer for PR or Deployment, someone mentioned you in a comment or description which is posted to the channel/personal chat via subscription. 
+  
+* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder.
 
 Some ideas under consideration:
-
-* GitHub Actions support
 * Support for GHES
+* Personal activity notifications - Track all your work personally with the GitHub personal bot
+
 
 ## Feedback
 
