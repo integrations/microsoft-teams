@@ -2,9 +2,9 @@
 
 ## Help Your Teams Communicate and Collaborate Better
 
-GitHub is the world's leading software development platform. [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is one of the most popular communication platforms where modern development teams come together to build world-class products and services. With two of your most important workspaces connected, you'll stay updated on what's happening on GitHub without leaving Microsoft Teams. 
+GitHub is the world's leading software development platform. [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is one of the most popular communication platforms where modern development teams come together to build world-class products and services. With two of your most important workspaces connected, you'll stay updated on what's happening on GitHub without leaving Microsoft Teams.
 
-Developers spend a considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in your Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward. 
+Developers spend a considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in your Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward.
 
 GitHub integration for Microsoft Teams is now GA and is built and maintained by GitHub.
 
@@ -12,7 +12,7 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 - [Installing the GitHub integration for Teams](#installing-the-github-integration-for-teams)
   - [Requirements](#requirements)
   - [Installation](#installation)
- - [Get Started](#get-started) 
+ - [Get Started](#get-started)
    - [Subscribe notifications](#subscribe-notifications)
    - [Customize notifications](#customize-notifications)
    - [Filters](#filters)
@@ -32,25 +32,25 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Teams.microsoft.com.
 
 ### Installation
-You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25). 
+You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
 
 <p align="left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
 
 Upon installing, a welcome message is displayed as shown in the following image. Use the ``@GitHub`` handle to start interacting with the app.
 <p align="left"><img width="500" alt="Install success" src="images/InstallSuccess.PNG"></p>
- 
-## Get Started 
+
+## Get Started
 At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a @github signin command.
 <p align="left"><img width="500" alt="Signin success" src="images/SigninSuccess.PNG"></p>
 
 ### Subscribe notifications
-You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@github subscribe <organization>/<repository>` command. 
+You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@github subscribe <organization>/<repository>` command.
 <p align="left"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
 
-Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and you need to grant access to the repositories you would like to subscribe. 
+Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and you need to grant access to the repositories you would like to subscribe.
 <p align="left"><img width="500" alt="Install App" src="images/InstallApp.PNG"></p>
 
-If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository. 
+If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
 You need to be an organization / account owner to install the app. If you dont have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
 
@@ -66,8 +66,8 @@ You can configure them using following commands:
 <p align="left"><img width="500" alt="Customize notifications" src="images/CustomizeNotifications.PNG"></p>
 
 Below features are enabled by default, and can be disabled with the `@github unsubscribe owner/repo [feature]` command:
-- issues - Opened / closed / ReOpened 
-- pulls - New / merged / Close / ReOpen 
+- issues - Opened / closed / ReOpened
+- pulls - New / merged / Close / ReOpen
 - commits - New commits on the default branch (usually main)
 - comments - New comments on issues and pull requests
 - deployments - Deployment statuses and Actions deployment review notifications
@@ -76,15 +76,16 @@ Below features are enabled by default, and can be disabled with the `@github uns
 These are disabled by default, and can be enabled with the '@github subscribe owner/repo [feature]' command:
 - reviews - Pull request reviews
 - branches - branch creation and deletion
+- discussions - Discussions created or answered
 - +label:"your label" - Filter issues, pull-requests and comments based on their labels.
 
-We also support repository notifications. You will get notified when your repo is made public or deleted. This notification is enabled by default and there is no separate feature to turn in off. Since repository update is a destructive activity, we want to notify the customer always. 
+We also support repository notifications. You will get notified when your repo is made public or deleted. This notification is enabled by default and there is no separate feature to turn in off. Since repository update is a destructive activity, we want to notify the customer always.
 
 To see the list of subscribed features, use `@github subscribe list features`
 <p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
 
 ### Filters
-#### Branch filters for commits 
+#### Branch filters for commits
 Branch filters allow filtering commit notifications. By default when you subscribe for commits feature, you will get notifications for your default branch (i.e. main). However, you can choose to filter on a specific branch, or a pattern of branches or all branches.
 
 - `@github subscribe org/repo commits`  for commit notifications from a default branch.
@@ -121,13 +122,13 @@ Notifications for any PR and Issue are grouped under a parent card as replies. T
 
 <p align="left"><img width="500" alt="PR Card" src="images/PRCard.PNG"></p>
 
-Any new event that happens on a pull request or issue (like comment/review/close/merge) is added as a reply to the parent card. 
+Any new event that happens on a pull request or issue (like comment/review/close/merge) is added as a reply to the parent card.
 <p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
 
 Note: In case of Draft PRs, updates are not notified in the channel. Once the Draft PR is moved to ready, the channel will start getting the notifications
 
 ### Deployments and actions approval notifications
-Deployment review notifications for your GitHub Actions environments can now be tracked end-to-end from your channel or personal app in Teams. 
+Deployment review notifications for your GitHub Actions environments can now be tracked end-to-end from your channel or personal app in Teams.
 You will be notified when a review is pending on your environment, when an approval is completed and you can see the real time status of your deployments.
 
 These notifications are available as part for "deployments" feature which is enabled by default when you subscribe to your repository or organization.
@@ -143,9 +144,9 @@ The following are the notifications available as part of "deployments" feature:
 <p align="left"><img width="500" alt="Deployment status" src="images/TeamsDeploymentStatus.png"></p>
 
 #### Updates to the app permissions for deployment notifications
-To receive the above notifications you need to grant access for Microsoft Teams in your GitHub organization. 
+To receive the above notifications you need to grant access for Microsoft Teams in your GitHub organization.
 
-"deployments" is a default enabled feature similar to "issues", "pulls", "commits". However, you will not get deployment notifications unless you grant permissions in your organization. 
+"deployments" is a default enabled feature similar to "issues", "pulls", "commits". However, you will not get deployment notifications unless you grant permissions in your organization.
 
 **Existing susbcriptions:**
 - Your existing subscriptions will continue to work. However you will not recieve deployment notification until you grant permissions.
@@ -177,6 +178,7 @@ Users need to be signed into GitHub to perform these actions from Teams. In case
 When you share links to GitHub activities and properties in the channel, more details are automatically extracted and shown as preview in Microsoft Teams channel. We support link previews for:
 - pull requests
 - issues
+- discussions
 - comments
 - code snippets
 - repositories
@@ -189,10 +191,28 @@ Previews of links will not be shown if the repository is private and the user th
 - Not signed in to their GitHub account
 - The repository is not authorized i.e the Microsoft Teams app is not installed in the GitHub repo.
 
+#### Unfurling discussions
+
+Unfurling links to discussions requires the `Discussions (read)` permission to be granted to the installed GitHub Teams app in your organization or repository.
+
+If you have previously installed the GitHub Teams app and you aren't able to unfurl discussion links, you may need to update your app to have the latest permissions.
+
+You can update your installation's permissions by following these steps:
+1. Go to your organization settings tab.
+2. Click "GitHub Apps" on the sidebar.
+3. You should see an entry for "Microsoft Teams for GitHub", with a message saying that a permissions update has been requested. Click the "Review request" link.
+4. Review the list of updated permissions, which should include "Read access to Discussions".
+5. Click the "Accept new permissions" button.
+
+🎉 Now that you've updated the permissions, you can unfrul discussion links!
+
+Note: We're working on making this process easier in the future with a prompt from the Teams integration itself – stay tuned!
+
 ### Personal app experience
 As part of personal app experience, you can now subscribe to your repositories and receive notifications for:
 - issues
 - pull requests
+- discussions
 - commits
 
 All the commands available in your channel are now available for Personal chat for GitHub.
@@ -205,7 +225,7 @@ You can now schedule reminders for pending pull requests. With this feature you 
 <p align="left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
 
 #### Channel reminders
-From Teams' channel, user can run following command to configure a reminder for pending pull requests on your Organization or Repository. 
+From Teams' channel, user can run following command to configure a reminder for pending pull requests on your Organization or Repository.
 `@github schedule organization/repository`
 
 This will create reminder for weekdays at 9.30 AM. However, if you want to configure reminder for a different day or time, you can achieve that by passing day and time as explained below.
@@ -230,7 +250,7 @@ You can get the list of reminders configured in a channel by running
 `@github schedule list`
 
 #### Personal reminders
-You can configure similar reminders in your personal chat too. 
+You can configure similar reminders in your personal chat too.
 
 - In personal chat, reminders can be configured only at the organization level. Repository level filter is not supported.
 - You need to be a member of the organization to configure reminders in the personal chat.
@@ -268,13 +288,13 @@ By granting the app access, you are providing the following authorizations to yo
 
 |Permission scope|Why we need it|
 |---|---|
-|Read access to issues, metadata, pull requests, and repository projects | To render previews of links shared in Teams|
+|Read access to issues, metadata, pull requests, discussions, and repository projects | To render previews of links shared in Teams|
 
 ## Upcoming features and roadmap
 We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new/choose).
-  
-* @ mentions support - notify the user when he/she is assigned an issue, added as a reviewer for PR or Deployment, someone mentioned you in a comment or description which is posted to the channel/personal chat via subscription. 
-  
+
+* @ mentions support - notify the user when they are assigned an issue, added as a reviewer for PR or Deployment, someone mentioned you in a comment or description which is posted to the channel/personal chat via subscription.
+
 * Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder.
 
 Some ideas under consideration:
