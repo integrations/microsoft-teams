@@ -193,6 +193,10 @@ Previews of links will not be shown if the repository is private and the user th
 
 #### Unfurling discussions
 
+Discussions and discussion comments can be automatically unfurled in Teams.
+
+<img width="490" alt="An example discussion link unfurl on Microsoft Teams" src="https://user-images.githubusercontent.com/858504/152766427-b3f8efa5-7aa9-4ef9-a5f1-8bea79d49ad8.png">
+
 Unfurling links to discussions requires the `Discussions (read)` permission to be granted to the installed GitHub Teams app in your organization or repository.
 
 If you have previously installed the GitHub Teams app and you aren't able to unfurl discussion links, you may need to update your app to have the latest permissions.
