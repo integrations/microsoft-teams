@@ -93,13 +93,13 @@ Branch filters allow filtering commit notifications. By default when you subscri
 - `@github subscribe org/repo commits:myBranch`  for commit notifications from a specific branch.
 - `@github subscribe org/repo commits:users/*`  for commit notifications from a pattern of branches.
 
-You can unsubscribe commits feature using `@github unsubscribe org/repo commits.
+You can unsubscribe from the commits feature using `@github unsubscribe org/repo commits.
 
 #### Label filters for issues and prs
-Label filters allow filtering incoming events based on a whitelisted label. You can add a lable filter with subscribe command
+Label filters allow filtering incoming events based on a whitelisted label. You can add a label filter with the subscribe command
 `@github subscribe owner/repo +label:priority:HIGH`
 
-This creates a required-label filter with the value priority:HIGH. Incoming events that support filters discarded unless they have that label. To update the existing filter just enter a new one, the old one will be updated. Currently, we only support having one filter. Multiple filters might be supported in the future.
+This creates a required-label filter with the value priority:HIGH. Incoming events that support filters are discarded unless they have that label. To update the existing filter just enter a new one, the old one will be updated. Currently, we only support having one filter. Multiple filters might be supported in the future.
 
 The notifications that are filtered by label are:
 - issues
@@ -110,7 +110,7 @@ The notifications that are filtered by label are:
 You can remove a filter by with unsubscribe command
 '@github unsubscribe owner/repo +label:priority:HIGH'
 
-It is common to have certain special characters in labels. Therefore we added support for the most common special characters for label filters. Here a few examples:
+It is common to have certain special characters in labels. Therefore we added support for the most common special characters for label filters. Here are a few examples:
 - label:priority:HIGH
 - label:teams/designers
 - label:"DO NOT MERGE"
