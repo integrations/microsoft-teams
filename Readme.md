@@ -18,6 +18,7 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
    - [Filters](#filters)
    - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
    - [Deployments and actions approval notifications](#deployments-and-actions-approval-notifications)
+   - [Mentions](#mentions)
    - [Move conversations into next steps](#move-conversations-into-next-steps)
    - [Unfurling GitHub links](#unfurling-github-links)
    - [Personal app experience](#personal-app-experience)
@@ -142,6 +143,23 @@ The following are the notifications available as part of "deployments" feature:
 
 3. Deployment status notifications for your environments. And the notification shows workflow information if the environment is deployed from GitHub Action workflow.
 <p align="left"><img width="500" alt="Deployment status" src="images/TeamsDeploymentStatus.png"></p>
+
+### Mentions
+When you subscribe to a repository in Teams, you will now see yourself mentioned in the notifications where you are referred and needs your attention.
+<p align="left"><img width="500" alt="PR Mentions" src="images/PRMentions.png"></p>
+<p align="left"><img width="500" alt="Deployment Mentions" src="images/DeploymentMentions.png"></p>
+
+When you receive notifications for Issues, PRs and Deployments, here are the cases when you will be mentioned.
+- Assignee in an Issue
+- Reviewer for a PR
+- Mentioned in a PR/Issue description/comment/discussion
+- Reviewer for a Deployment
+- Scheduled reminders for PR review requests
+
+#### How does mentions work?
+Mentions will work only if you login to GitHub app from Microsoft Teams. When you login to GitHub app with your GitHub id, we map it with your Microsoft Teams id and ping you in Teams whenever you are mentioned in any of the GitHub notifications.  
+
+**Note**: If you have multiple Microsoft Teams tenants where you use GitHub app, mentions will work only in the tenant where you login to GitHub app the latest.  
 
 #### Updates to the app permissions for deployment notifications
 To receive the above notifications you need to grant access for Microsoft Teams in your GitHub organization.
