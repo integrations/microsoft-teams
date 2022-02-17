@@ -147,7 +147,6 @@ The following are the notifications available as part of "deployments" feature:
 ### Mentions
 When you subscribe to a repository in Teams, you will now see yourself mentioned in the notifications where you are referred and needs your attention.
 <p align="left"><img width="500" alt="PR Mentions" src="images/PRMentions.png"></p>
-<p align="left"><img width="500" alt="Deployment Mentions" src="images/DeploymentMentions.png"></p>
 
 When you receive notifications for Issues, PRs and Deployments, here are the cases when you will be mentioned.
 - Assignee in an Issue
