@@ -38,11 +38,11 @@ You can go to Microsoft teams app store and install GitHub app or you can direct
 <p align="left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
 
 Upon installing, a welcome message is displayed as shown in the following image. Use the ``@GitHub`` handle to start interacting with the app.
-<p align="left"><img width="500" alt="Install success" src="images/InstallSuccess.PNG"></p>
+<p align="left"><img width="500" alt="Install success" src="images/NewWelcomeTeams.png"></p>
 
 ## Get Started
 At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a @github signin command.
-<p align="left"><img width="500" alt="Signin success" src="images/SigninSuccess.PNG"></p>
+<p align="left"><img width="500" alt="Signin success" src="images/NewGettingStarted.png"></p>
 
 ### Subscribe notifications
 You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@github subscribe <organization>/<repository>` command.
