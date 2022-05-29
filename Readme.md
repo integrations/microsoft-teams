@@ -149,17 +149,17 @@ To receive the above notifications you need to grant access for Microsoft Teams 
 
 "deployments" is a default enabled feature similar to "issues", "pulls", "commits". However, you will not get deployment notifications unless you grant permissions in your organization.
 
-**Existing susbcriptions:**
+**Existing subscriptions:**
 - Your existing subscriptions will continue to work. However you will not recieve deployment notification until you grant permissions.
 <p align="left"><img width="500" alt="Permissions" src="images/Permissions.png"></p>
 
-- You cannot modify your existing subscriptions until you update the app and grant permissions. We will notify you to update when you try to modify an existing susbcription.
+- You cannot modify your existing subscriptions until you update the app and grant permissions. We will notify you to update when you try to modify an existing subscription.
 <p align="left"><img width="500" alt="Update app" src="images/TeamsUpdateApp.png"></p>
 
 - However, if you choose not to update the app, you can unsubscribe "deployments" feature for the existing subscriptions and then you will be able to modify your subscriptions.
 
 **New subscriptions:**
-- You cannot add a new subscription until you grant permissions in your GitHub organization as "deployments" is a default feature in your subscription. We will notify you to update when you try to add a new susbcription.
+- You cannot add a new subscription until you grant permissions in your GitHub organization as "deployments" is a default feature in your subscription. We will notify you to update when you try to add a new subscription.
 
 You can directly update the app by going to your GiHub organization->settings->installed apps and update Microsoft Teams app for GitHub.
 <p align="left"><img width="500" alt="Update App" src="images/UpdateApp.png"></p>
