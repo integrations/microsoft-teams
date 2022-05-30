@@ -53,7 +53,7 @@ Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and 
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
-You need to be an organization / account owner to install the app. If you dont have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
+You need to be an organization / account owner to install the app. If you don't have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need to work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to a repository / organization in the channel of your choice.
 
 The `@github` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@github unsubscribe <organization>/<repository>`
 
@@ -156,7 +156,7 @@ To receive the above notifications you need to grant access for Microsoft Teams 
 - You cannot modify your existing subscriptions until you update the app and grant permissions. We will notify you to update when you try to modify an existing subscription.
 <p align="left"><img width="500" alt="Update app" src="images/TeamsUpdateApp.png"></p>
 
-- However, if you choose not to update the app, you can unsubscribe "deployments" feature for the existing subscriptions and then you will be able to modify your subscriptions.
+- However, if you choose not to update the app, you can unsubscribe the "deployments" feature for the existing subscriptions and then you will be able to modify your subscriptions.
 
 **New subscriptions:**
 - You cannot add a new subscription until you grant permissions in your GitHub organization as "deployments" is a default feature in your subscription. We will notify you to update when you try to add a new subscription.
@@ -225,7 +225,7 @@ You can update your installation's permissions by following these steps:
 4. Review the list of updated permissions, which should include "Read access to Discussions".
 5. Click the "Accept new permissions" button.
 
-🎉 Now that you've updated the permissions, you can unfrul discussion links!
+🎉 Now that you've updated the permissions, you can unfurl discussion links!
 
 Note: We're working on making this process easier in the future with a prompt from the Teams integration itself – stay tuned!
 
@@ -249,7 +249,7 @@ You can now schedule reminders for pending pull requests. With this feature you 
 From Teams' channel, user can run following command to configure a reminder for pending pull requests on your Organization or Repository.
 `@github schedule organization/repository`
 
-This will create reminder for weekdays at 9.30 AM. However, if you want to configure reminder for a different day or time, you can achieve that by passing day and time as explained below.
+This will create a reminder for weekdays at 9.30 AM. However, if you want to configure reminder for a different day or time, you can achieve that by passing day and time as explained below.
 `@github schedule organization/repository <Day format> <Timeformat>`
 
 |Command	| Functionality |
@@ -262,7 +262,7 @@ This will create reminder for weekdays at 9.30 AM. However, if you want to confi
 
 - In a channel only organization admin can configure reminders.
 - The day formats supported are weekdays, weekends, everyday and individual days or the sequence can be given with Mon ,Tue ,Wed,Thu,Fri,Sat,Sun.
-- The time format is 24 scale and we only support 30 minute intervals. The timezone is automatically taken from the Microsoft Teams timzone.
+- The time format is 24 scale and we only support 30 minute intervals. The timezone is automatically taken from the Microsoft Teams timezone.
 
 You can remove reminders from a channel by running the following command
 `@github unschedule organization/repository`
@@ -316,7 +316,7 @@ We're constantly at work to improve the app, and soon you’ll see new features 
 
 * @ mentions support - notify the user when they are assigned an issue, added as a reviewer for PR or Deployment, someone mentioned you in a comment or description which is posted to the channel/personal chat via subscription.
 
-* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder.
+* Schedule reminders updates - Provide advanced controls for schedule reminders backed by an easy to use UI and remove administrator requirement for scheduling a reminder.
 
 Some ideas under consideration:
 * Support for GHES
