@@ -150,7 +150,7 @@ To receive the above notifications you need to grant access for Microsoft Teams 
 "deployments" is a default enabled feature similar to "issues", "pulls", "commits". However, you will not get deployment notifications unless you grant permissions in your organization.
 
 **Existing susbcriptions:**
-- Your existing subscriptions will continue to work. However you will not recieve deployment notification until you grant permissions.
+- Your existing subscriptions will continue to work. However you will not receive deployment notification until you grant permissions.
 <p align="left"><img width="500" alt="Permissions" src="images/Permissions.png"></p>
 
 - You cannot modify your existing subscriptions until you update the app and grant permissions. We will notify you to update when you try to modify an existing susbcription.
