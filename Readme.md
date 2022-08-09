@@ -34,9 +34,9 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Microsoft Teams(Teams.microsoft.com). 
 
 #### GHES - Private preview
-We are planning to rollout GHES integration with Microsoft Teams as part of GHES 3.6.
+We are planning to support GHES integration with Microsoft Teams as part of GHES 3.6 which is planned to rollout by end of August, 2022.
 
-This will be a private preview and interested customers can enrol for the preview by creating an issue from [here](https://github.com/integrations/microsoft-teams/issues/new). We will help you with the onboarding process. 
+This will be a private preview and interested customers can enrol for the preview by creating an issue from [here](https://github.com/integrations/microsoft-teams/issues/new). We will help you with the onboarding process.
 
 ### Installation
 You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
@@ -320,13 +320,12 @@ By granting the app access, you are providing the following authorizations to yo
 ## Upcoming features and roadmap
 We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new/choose).
 
-* @ mentions support - notify the user when they are assigned an issue, added as a reviewer for PR or Deployment, someone mentioned you in a comment or description which is posted to the channel/personal chat via subscription.
+* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder. We are planning to rollout this support by end of August, 2022.
 
-* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder.
-
-Some ideas under consideration:
-* Support for GHES
-* Personal activity notifications - Track all your work personally with the GitHub personal bot
+* Support for GHES - We are supporting GHES integration as a private preview with GHES 3.6. Based on the feedback, we will decide the GA timelines.
+* Issue create and manage capabilities - Provide capabilities to create and manage issues directly from your chat. We are aiming to rollout this support by September, 2022.
+* GitHub Actions notifications and manage capabilities - Provide capabilities to run, view and manage workflows from chat. We are iming to rollout this support by October, 2022.
+* Customer filters support to manage notifications - This is one of the top asked feature. Provide support to customize notifications by providing advaced filter capabilities. Timlines are to be decided.
 
 
 ## Feedback
