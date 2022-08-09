@@ -30,7 +30,13 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 --------
 ## Installing the GitHub integration for Teams
 ### Requirements
-This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Teams.microsoft.com.
+#### GHEC - GA
+This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Microsoft Teams(Teams.microsoft.com). 
+
+#### GHES - Private preview
+We are planning to rollout GHES integration with Microsoft Teams as part of GHES 3.6.
+
+This will be a private preview and interested customers can enrol for the preview by creating an issue from [here](https://github.com/integrations/microsoft-teams/issues/new). We will help you with the onboarding process. 
 
 ### Installation
 You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
