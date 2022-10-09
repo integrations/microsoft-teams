@@ -267,12 +267,12 @@ Note: Schedule reminders feature is available only for organizations (not for us
 
 
 2. This will show all the reminders configured for this organization in this channel and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
-<p align="left"><img width="500" alt="Create Reminder" src="images/CreateReminder.PNG"></p>
+<p align="left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
 
 Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
 
 3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
-<p align="left"><img width="500" alt="Reminder UI" src="images/ReminderUI.PNG"></p>
+<p align="left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
 
 - Days: Choose what days of the week would you like to get the reminders
 - Times: Choose what times of day would you like to get reminders
@@ -295,7 +295,7 @@ All of the above settings will ensure you get reminders for the pull request tha
 
 4. You can edit or remove reminders for a specific organization by running the following command
 `@github schedule organization`
-<p align="left"><img width="500" alt="ListReminders" src="images/ListReminders.PNG"></p>
+<p align="left"><img width="500" alt="ListReminders" src="images/ListReminders.png"></p>
 This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
 
 5. You can get the list of reminders configured in a channel by running
