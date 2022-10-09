@@ -262,7 +262,6 @@ Here are the steps to configure reminders for your pending pull requests.
 
 1. From Teams' channel, the user needs to run can run following command to configure a reminder for pending pull requests on your Organization.
 `@github schedule organization`
-<p align="left"><img width="500" alt="Schedule Org" src="images/ScheduleOrg.PNG"></p>
 
 Note: Schedule reminders feature is available only for organizations (not for user accounts). And for free organizations, you can only configure reminders for public repositores. However, if you have a paid plan, you can also configure reminders for private repositories in your organization.
 
@@ -307,14 +306,9 @@ You can configure similar reminders in your personal chat too. However, unlike c
 
 1. From the personal app, you need to run can run following command to configure a reminder for pending pull requests on your Organization.
 `schedule organization`
-<p align="left"><img width="500" alt="Personal App Command" src="images/PersonalScheduleOrg.PNG"></p>
-
-Note: You need to be a member of the organization to configure reminders in the personal chat.
-
 
 2. This will show all the reminders configured for this organization in your personal app and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
 <p align="left"><img width="500" alt="Personal Create Reminder" src="images/PersonalCreateReminder.PNG"></p>
-Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
 
 3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
 <p align="left"><img width="500" alt="Personal Reminder UI" src="images/PersonalReminderUI.PNG"></p>
