@@ -249,7 +249,7 @@ You can also signin to GitHub with Personal app chat and avoid separate signin i
 
 ### Schedule Reminders
 You can configure schedule reminders for pending pull requests. With this feature you get periodic reminders of pending pull requests as part of your channel or personal chat.
-<p align="left"><img width="500" alt="Schedule reminders" src="images/UpdatedScheduleReminders.PNG"></p>
+<p align="left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
 
 #### What's new with Schedule reminders?
 We made significant improvements to schedule reminders experience. 
