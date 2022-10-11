@@ -34,9 +34,10 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Microsoft Teams(Teams.microsoft.com). 
 
 #### GHES - Private preview
-We are planning to support GHES integration with Microsoft Teams as part of GHES 3.6 which is planned to rollout by end of August, 2022.
-
+GHES integration for Microsoft Teams is currently under private preview with GHES 3.6. 
 This will be a private preview and interested customers can enroll for the preview by creating an issue from [here](https://github.com/integrations/microsoft-teams/issues/new). We will help you with the onboarding process.
+
+We are targetting to GA our GitHub integration with GHES 3.8. 
 
 ### Installation
 You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
@@ -132,7 +133,7 @@ Notifications for any PR and Issue are grouped under a parent card as replies. T
 Any new event that happens on a pull request or issue (like comment/review/close/merge) is added as a reply to the parent card.
 <p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
 
-Note: In case of Draft PRs, updates are not notified in the channel. Once the Draft PR is moved to ready, the channel will start getting the notifications
+Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved to ready, you will start getting the notifications
 
 ### Deployments and actions approval notifications
 Deployment review notifications for your GitHub Actions environments can now be tracked end-to-end from your channel or personal app in Teams.
@@ -193,7 +194,7 @@ Teams conversations often lead to decisions and actionable takeaways. You can pe
 - Close and ReOpen issue
 - Comment on issue and pull request
 
-<p align="left"><img width="500" alt="Issue Card" src="images/IssueCard.PNG"></p>
+<p align="left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.png"></p>
 
 Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
@@ -236,51 +237,91 @@ You can update your installation's permissions by following these steps:
 Note: We're working on making this process easier in the future with a prompt from the Teams integration itself – stay tuned!
 
 ### Personal app experience
-As part of personal app experience, you can now subscribe to your repositories and receive notifications for:
-- issues
-- pull requests
-- discussions
-- commits
+With our GitHub app, you also get a personal app in MS Teams where you can subscribe to your repos and track your work. The notifications will be posted in the GitHub personal chat that is visible only for you. All the commands and notifications available in your channel are also available in Personal chat for GitHub.
 
-All the commands available in your channel are now available for Personal chat for GitHub.
-<p align="left"><img width="500" alt="PR Card" src="images/PersonalApp.PNG"></p>
+<p align="left"><img width="500" alt="Personal App" src="images/PersonalApp.PNG"></p>
 
-You can also signin to GitHub with Personal app chat and avoid separate signin in your channels.
+In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat but they are not grouped under parent cards. Instead, you get independent notifications.
+<p align="left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
 
 ### Schedule Reminders
-You can now schedule reminders for pending pull requests. With this feature you can now get periodic reminders of pending pull requests as part of your channel or personal chat.
+You can configure schedule reminders for pending pull requests. With this feature you get periodic reminders of pending pull requests as part of your channel or personal chat.
 <p align="left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
 
+#### What's new with Schedule reminders?
+We made significant improvements to schedule reminders experience. 
+- The old way of configuring reminders via commands is now gone.
+- We have introduced a first class UI to configure your pending pull request reminders. And as part of this UI, we added a bunch of advanced controls that will help you in fine tuning your reminders. 
+- We relaxed the administrator requirement to configure reminders. Now, any contributor can schedule reminders in MS Teams for the repositories he/she has access.
+
 #### Channel reminders
-From Teams' channel, user can run following command to configure a reminder for pending pull requests on your Organization or Repository.
-`@github schedule organization/repository`
+Here are the steps to configure reminders for your pending pull requests.
 
-This will create reminder for weekdays at 9.30 AM. However, if you want to configure reminder for a different day or time, you can achieve that by passing day and time as explained below.
-`@github schedule organization/repository <Day format> <Timeformat>`
+1. From Teams' channel, the user needs to run can run following command to configure a reminder for pending pull requests on your Organization.
+`@github schedule organization`
 
-|Command	| Functionality |
-| -------------------- |----------------|
-|`@github schedule <organization>`| Creates a default reminder on the organization for weekdays at 9.30 AM |
-|`@github schedule <organization>/<Repository>`| Creates a default reminder on the repository for weekdays at 9.30 AM |
-|`@github schedule <organization>/<Repository> everyday 14:30`| Creates reminder on the repository for everyday at 2:30 PM |
-|`@github schedule <organization>/<Repository> Mon,Tue 14:30`| Creates reminder on the repository for Monday and Tuesday at 2:30 PM |
-|`@github schedule <organization> Mon-Wed,Fri 9,14:30`| Creates reminder on the organization for Monday, Tuesday, Wednesday and Friday at 9:00 AM and 2:30 PM |
+Note: Schedule reminders feature is available only for organizations (not for user accounts). And for free organizations, you can only configure reminders for public repositores. However, if you have a paid plan, you can also configure reminders for private repositories in your organization.
 
-- In a channel only organization admin can configure reminders.
-- The day formats supported are weekdays, weekends, everyday and individual days or the sequence can be given with Mon ,Tue ,Wed,Thu,Fri,Sat,Sun.
-- The time format is 24 scale and we only support 30 minute intervals. The timezone is automatically taken from the Microsoft Teams timzone.
 
-You can remove reminders from a channel by running the following command
-`@github unschedule organization/repository`
+2. This will show all the reminders configured for this organization in this channel and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
+<p align="left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
 
-You can get the list of reminders configured in a channel by running
+Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
+
+3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
+<p align="left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
+
+- Days: Choose what days of the week would you like to get the reminders
+- Times: Choose what times of day would you like to get reminders
+- Timezone: You can choose the timezone 
+- Teams filter: Filter the reminders by the teams on which the pull request are pending
+- Repositories: Choose for which repos you want to get reminders 
+
+Then you have bunch of advanced options like:
+- Ignore drafts
+- Require review requests: Would you want to get reminders for all the prs or only for ones that need review
+- Remind authors after reviews: Do you want to get reminders after multipler reviews
+- Approved pull requests: Do you want to get reminders for approved pull requests as well
+- Minimum age and Minimum staleness of the PRs
+- Ignore terms in the title
+- Ignore labels
+- Required labels
+
+All of the above settings will ensure you get reminders for the pull request that need your attention and there is no unnecessary noise in the channel.
+
+
+4. You can edit or remove reminders for a specific organization by running the following command
+`@github schedule organization`
+<p align="left"><img width="500" alt="ListReminders" src="images/ListReminders.png"></p>
+This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
+
+5. You can get the list of reminders configured in a channel by running
 `@github schedule list`
 
 #### Personal reminders
-You can configure similar reminders in your personal chat too.
+You can configure similar reminders in your personal chat too. However, unlike channel, the personal app only shows the reminders for the pull requests pending on you or your team.
 
-- In personal chat, reminders can be configured only at the organization level. Repository level filter is not supported.
-- You need to be a member of the organization to configure reminders in the personal chat.
+1. From the personal app, you need to run can run following command to configure a reminder for pending pull requests on your Organization.
+`schedule organization`
+
+2. This will show all the reminders configured for this organization in your personal app and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
+<p align="left"><img width="500" alt="Personal Create Reminder" src="images/PersonalCreateReminder.PNG"></p>
+
+3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
+<p align="left"><img width="500" alt="Personal Reminder UI" src="images/PersonalReminderUI.PNG"></p>
+
+- Days: Choose what days of the week would you like to get the reminders
+- Times: Choose what times of day would you like to get reminders
+- Reminders pending on your team
+- Reminders pending on you
+
+4. You can edit or remove reminders for a specific organization by running the following command
+`schedule organization`
+<p align="left"><img width="500" alt="Personal List Reminders" src="images/PersonalListReminders.PNG"></p>
+This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
+
+5. You can get the list of reminders configured in a channel by running
+`schedule list`
 
 
 ### Command reference
@@ -296,6 +337,8 @@ The following table lists all the commands you can use in your Microsoft Teams c
 | @github subscribe list	features | List the subscriptions in the channel and the features subscribed |
 | @github unsubscribe <Organization>/<Repository>	| Unsubscribe from Organization or Repository |
 | @github unsubscribe <Organization>/<Repository>	[feature] | Unsubscribe a specific feature in an Organization or Repository |
+| @github schedule <organization> | List the reminders scheduled for the organization in this channel |
+| @github schedule list	| List all the reminders configured in this channel |
 | @github signout	| Disconnect with your GitHub Account and remove all subscriptions |
 
 ### Authorization
@@ -320,13 +363,10 @@ By granting the app access, you are providing the following authorizations to yo
 ## Upcoming features and roadmap
 We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new/choose).
 
-* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder. We are planning to rollout this support by end of August, 2022.
-
-* Support for GHES - We are supporting GHES integration as a private preview with GHES 3.6. Based on the feedback, we will decide the GA timelines.
-* Issue create and manage capabilities - Provide capabilities to create and manage issues directly from your chat. We are aiming to rollout this support by September 2022.
-* GitHub Actions notifications and manage capabilities - Provide capabilities to run, view and manage workflows from chat. We are aiming to rollout this support by October 2022.
-* Custom filters support to manage notifications - This is one of the top asked feature. Provide support to customize notifications by providing advaced filter capabilities. Timlines are to be decided.
-
+* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder. This feature is shipped. Refer to the documentation above.
+* Support for GHES - We are supporting GHES integration as a private preview with GHES 3.6. We are targetting GA with GHES 3.8.
+* Issue create and manage capabilities - Provide capabilities to create and manage issues directly from your chat. We are aiming to rollout by end of Octorber, 2022.
+* GitHub Actions notifications and manage capabilities - Provide capabilities to run, view and manage workflows from chat. We are aiming to rollout this support by November 2022.
 
 ## Feedback
 
