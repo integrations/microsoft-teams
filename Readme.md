@@ -194,7 +194,7 @@ Teams conversations often lead to decisions and actionable takeaways. You can pe
 - Close and ReOpen issue
 - Comment on issue and pull request
 
-<p align="left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.PNG"></p>
+<p align="left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.png"></p>
 
 Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
