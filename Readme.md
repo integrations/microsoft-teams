@@ -34,9 +34,10 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Microsoft Teams(Teams.microsoft.com). 
 
 #### GHES - Private preview
-We are planning to support GHES integration with Microsoft Teams as part of GHES 3.6 which is planned to rollout by end of August, 2022.
-
+GHES integration for Microsoft Teams is currently under private preview with GHES 3.6. 
 This will be a private preview and interested customers can enroll for the preview by creating an issue from [here](https://github.com/integrations/microsoft-teams/issues/new). We will help you with the onboarding process.
+
+We are targetting to GA our GitHub integration with GHES 3.8. 
 
 ### Installation
 You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
@@ -132,7 +133,7 @@ Notifications for any PR and Issue are grouped under a parent card as replies. T
 Any new event that happens on a pull request or issue (like comment/review/close/merge) is added as a reply to the parent card.
 <p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
 
-Note: In case of Draft PRs, updates are not notified in the channel. Once the Draft PR is moved to ready, the channel will start getting the notifications
+Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved to ready, you will start getting the notifications
 
 ### Deployments and actions approval notifications
 Deployment review notifications for your GitHub Actions environments can now be tracked end-to-end from your channel or personal app in Teams.
@@ -193,7 +194,7 @@ Teams conversations often lead to decisions and actionable takeaways. You can pe
 - Close and ReOpen issue
 - Comment on issue and pull request
 
-<p align="left"><img width="500" alt="Issue Card" src="images/IssueCard.PNG"></p>
+<p align="left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.PNG"></p>
 
 Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
@@ -236,16 +237,12 @@ You can update your installation's permissions by following these steps:
 Note: We're working on making this process easier in the future with a prompt from the Teams integration itself – stay tuned!
 
 ### Personal app experience
-As part of personal app experience, you can now subscribe to your repositories and receive notifications for:
-- issues
-- pull requests
-- discussions
-- commits
+With our GitHub app, you also get a personal app in MS Teams where you can subscribe to your repos and track your work. The notifications will be posted in the GitHub personal chat that is visible only for you. All the commands and notifications available in your channel are also available in Personal chat for GitHub.
 
-All the commands available in your channel are now available for Personal chat for GitHub.
-<p align="left"><img width="500" alt="PR Card" src="images/PersonalApp.PNG"></p>
+<p align="left"><img width="500" alt="Personal App" src="images/PersonalApp.PNG"></p>
 
-You can also signin to GitHub with Personal app chat and avoid separate signin in your channels.
+In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat but they are not grouped under parent cards. Instead, you get independent notifications.
+<p align="left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
 
 ### Schedule Reminders
 You can configure schedule reminders for pending pull requests. With this feature you get periodic reminders of pending pull requests as part of your channel or personal chat.
