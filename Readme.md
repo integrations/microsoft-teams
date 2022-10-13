@@ -323,6 +323,9 @@ This will list all the reminders configured for the organization in this channel
 5. You can get the list of reminders configured in a channel by running
 `schedule list`
 
+**Note** : Please note that there is a minor bug on MSTeams adaptive card platform that effects the edit flow for the schedule reminders. 
+In your channel, if you had selected specific repos or teams to filter your reminders when you create,  and later if you try to reopen and edit the reminder, the previous selection of repos or team is not shown in the UI. So, if you are making any changes to the reminder, we suggest you to re-enter the teams/repos again. Incase if your reminder targets 'All repos' and/or 'All teams' in your org, then you will not face this bug. We apologise for this inconvinience. We are following up with MS Teams platform to resolve this issue.
+
 
 ### Command reference
 
