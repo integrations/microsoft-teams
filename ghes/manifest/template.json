@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.10.61.36676",
+      "templateHash": "6946983346281809281"
+    }
+  },
+  "parameters": {
+    "GHESInstanceNameHostName": {
+      "type": "string"
+    },
+    "MicrosoftAppId": {
+      "type": "string"
+    }
+  },
+  "variables": {
+    "uniqueName": "[format('gh{0}', uniqueString(resourceGroup().id, deployment().name))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.BotService/botServices",
+      "apiVersion": "2021-03-01",
+      "name": "[format('{0}-bot', variables('uniqueName'))]",
+      "location": "global",
+      "kind": "azurebot",
+      "sku": {
+        "name": "F0"
+      },
+      "properties": {
+        "displayName": "GHE",
+        "endpoint": "[format('https://{0}/_msteams/teams/message', parameters('GHESInstanceNameHostName'))]",
+        "msaAppId": "[parameters('MicrosoftAppId')]",
+        "msaAppType": "MultiTenant"
+      }
+    },
+    {
+      "type": "Microsoft.BotService/botServices/channels",
+      "apiVersion": "2021-03-01",
+      "name": "[format('{0}-bot/MsTeamsChannel', variables('uniqueName'))]",
+      "location": "global",
+      "properties": {
+        "channelName": "MsTeamsChannel",
+        "properties": {
+          "acceptedTerms": true,
+          "deploymentEnvironment": "commercialdeployment",
+          "enableCalling": false,
+          "incomingCallRoute": "graphPma",
+          "isEnabled": true
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.BotService/botServices', format('{0}-bot', variables('uniqueName')))]"
+      ]
+    }
+  ]
+}
