@@ -170,8 +170,6 @@ You can unsubscribe for workflows notifications by just running the below comman
 #### Updates to the app permissions
 To receive the above notifications you need to grant access for Actions events for Microsoft Teams in your GitHub organization. You will be prompted to do so as you try to enable `workflows` feature for your organization the first time.
 
-Note: The below `deployments` feature can also be used to post notifications for deployments happening to your GitHub Actions environments. However, we recommend you to use the new `workflows` feature as you will be able to get the full context along with ability to approve your Actions deployments in place.
-
 
 ### Deployment notifications
 We support a separate notifications for your deployments. These deployments can happen from Actions or from external sources using [Deployments api](https://docs.github.com/en/rest/deployments/deployments?apiVersion=2022-11-28#about-the-deployments-api). 
