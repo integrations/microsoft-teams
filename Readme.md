@@ -17,7 +17,8 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
    - [Customize notifications](#customize-notifications)
    - [Filters](#filters)
    - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
-   - [Deployments and actions approval notifications](#deployments-and-actions-approval-notifications)
+   - [Actions workflow notifications](#actions-workflow-notifications)
+   - [Deployment notifications](#deployments-and-actions-approval-notifications)
    - [Mentions](#mentions)
    - [Move conversations into next steps](#move-conversations-into-next-steps)
    - [Unfurling GitHub links](#unfurling-github-links)
@@ -78,11 +79,12 @@ Below features are enabled by default, and can be disabled with the `@github uns
 - pulls - New / merged / Close / ReOpen
 - commits - New commits on the default branch (usually main)
 - comments - New comments on issues and pull requests
-- deployments - Deployment statuses and Actions deployment review notifications
+- deployments - Deployment status notifications
 - releases - New release and pre-release published
 
 These are disabled by default, and can be enabled with the '@github subscribe owner/repo [feature]' command:
 - reviews - Pull request reviews
+- workflows - Actions workflows and approval notifications
 - branches - branch creation and deletion
 - discussions - Discussions created or answered
 - +label:"your label" - Filter issues, pull-requests and comments based on their labels.
@@ -135,21 +137,54 @@ Any new event that happens on a pull request or issue (like comment/review/close
 
 Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved to ready, you will start getting the notifications
 
-### Deployments and actions approval notifications
-Deployment review notifications for your GitHub Actions environments can now be tracked end-to-end from your channel or personal app in Teams.
-You will be notified when a review is pending on your environment, when an approval is completed and you can see the real time status of your deployments.
+### Actions workflow notifications
+You can subscribe to GitHub Actions workflow run notifications from your channel or personal app using "workflows" feature.
 
-These notifications are available as part for "deployments" feature which is enabled by default when you subscribe to your repository or organization.
+<p align="left"><img width="500" alt="Workflows Card" src="images/Workflows.PNG"></p>
 
-The following are the notifications available as part of "deployments" feature:
-1. Deployment review pending notifications for your environments being deployed through GitHub Actions workflow.
-<p align="left"><img width="500" alt="Review Pending" src="images/TeamsReviewPending.png"></p>
+- You will get notified when a new workflow run is triggered. And you can track the live status of the jobs. 
+- You can track the approval notifications as a reply in the thread and you can approve the notifications directly from channel/personal app.
+- Once the workflow is completed, you will get a update as a reply in th thread so that you can complete context and history about the workflow run.
+- If something fails, you can choose to rerun the workflow in place and you can also enable debug logs if needed.
 
-2. Deployment review completed notifications for your environments being deployed through GitHub Actions workflow.
-<p align="left"><img width="500" alt="Approval completed" src="images/TeamsReviewCompleted.png"></p>
+#### Workflow notification filters
+Getting notified about each and every workflow run notification can be noisy. So, we are providing you capability to filter the notifications based on your requirement.
+You can filter your actions workflows notifications based on name, event, actor and/or branch. You can filter the notifications as below.
 
-3. Deployment status notifications for your environments. And the notification shows workflow information if the environment is deployed from GitHub Action workflow.
+`@github subscribe owner/repo workflows:{name:"your workflow name" event:"workflow event" branch:"branch name" actor:"actor name"}`
+
+- name: Name of your workflow
+- event: The event on which the workflow is triggered. You can find all the available events list [here](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#available-events).
+- actor: The person who triggered or responsible for running of the workflow
+- branch: The branch on which the workflow is running. Only incase where pull_request event is included, the branch will be the target branch the pull request is created for.
+
+You can pass multiple entries for each of the events in as a comma separate list as below example:
+`@github subscribe org/repo workflows:{event:"pull_request","push" branch:"main","dev" actor:"ashokirla"}`
+
+By default, when you configure workflow notifications without passing any filters, it is configured for workflows triggered via pull requests targeting your default branch.
+You can pass one or multiple entries. 
+
+You can unsubscribe for workflows notifications by just running the below command:
+`@github unsubscribe org/repo workflows`
+
+#### Updates to the app permissions for deployment notifications
+To receive the above notifications you need to grant access for Actions events for Microsoft Teams in your GitHub organization. You will be prompted to do so as you try to enable `workflows` feature for your organization the first time.
+
+Note: The below `deployments` feature can also be used to post notifications for deployments happening to your GitHub Actions environments. However, we recommend you to use the new `workflows` feature as you will be able to get the full context along with ability to approve your Actions deployments in place.
+
+
+### Deployment notifications
+We support a separate notifications for your deployments. These deployments can happen from Actions or from external sources using [Deployments api](https://docs.github.com/en/rest/deployments/deployments?apiVersion=2022-11-28#about-the-deployments-api). 
+
+Deployment status notifications for your environments. And the notification shows workflow information if the environment is deployed from GitHub Action workflow.
 <p align="left"><img width="500" alt="Deployment status" src="images/TeamsDeploymentStatus.png"></p>
+
+You can enable/disable this feature by running:
+
+`@github subscribe/unsubscribe org/repo deployments`
+
+Note: If you are using GitHub actions and want to track your deployments to environments, we recommend to use the new `workflows` feature instead as it shows the full picture and gives you ability to approve your deployments inplace. 
+
 
 #### Updates to the app permissions for deployment notifications
 To receive the above notifications you need to grant access for Microsoft Teams in your GitHub organization.
