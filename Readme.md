@@ -399,10 +399,10 @@ By granting the app access, you are providing the following authorizations to yo
 ## Upcoming features and roadmap
 We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new/choose).
 
-* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder. This feature is shipped. Refer to the documentation above.
+* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder. `Shipped` Refer to the documentation above.
 * Support for GHES - We are supporting GHES integration as a private preview with GHES 3.6. We are targetting GA with GHES 3.8.
 * Issue create and manage capabilities - Provide capabilities to create and manage issues directly from your chat. We are aiming to rollout by end of Octorber, 2022.
-* GitHub Actions notifications and manage capabilities - Provide capabilities to run, view and manage workflows from chat. We are aiming to rollout this support by November 2022.
+* GitHub Actions notifications and manage capabilities - Provide capabilities to run, view and manage workflows from chat. We are aiming to rollout this support by November 2022. `Shipped' Refer to the documentation above.
 
 ## Feedback
 
