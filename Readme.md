@@ -140,7 +140,7 @@ Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved
 ### Actions workflow notifications
 You can subscribe to GitHub Actions workflow run notifications from your channel or personal app using "workflows" feature.
 
-<p align="left"><img width="500" alt="Workflows Card" src="images/Workflows.PNG"></p>
+<p align="left"><img width="800" alt="Workflows Card" src="images/Workflows.PNG"></p>
 
 - You will get notified when a new workflow run is triggered. And you can track the live status of the jobs. 
 - You can track the approval notifications as a reply in the thread and you can approve the notifications directly from channel/personal app.
@@ -168,7 +168,8 @@ You can unsubscribe for workflows notifications by just running the below comman
 `@github unsubscribe org/repo workflows`
 
 #### Updates to the app permissions
-To subscribe and receive the notifications for actions workflow run updates you need to grant access for Actions events for Microsoft Teams in your GitHub organization. You will be prompted to do so as you try to enable `workflows` feature for your organization the first time.
+To subscribe and receive the notifications for actions workflow run updates you need to grant access to Actions events in your organization for GitHub app in MS Teams. You will be prompted to do so as you try to enable `workflows` feature for your organization the first time.
+<p align="left"><img width="500" alt="Permissions" src="images/ActionsPermissions.png"></p>
 
 
 ### Deployment notifications
