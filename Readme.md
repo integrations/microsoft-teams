@@ -168,13 +168,12 @@ You can unsubscribe for workflows notifications by just running the below comman
 `@github unsubscribe org/repo workflows`
 
 #### Updates to the app permissions
-To receive the above notifications you need to grant access for Actions events for Microsoft Teams in your GitHub organization. You will be prompted to do so as you try to enable `workflows` feature for your organization the first time.
+To subscribe and receive the notifications for actions workflow run updates you need to grant access for Actions events for Microsoft Teams in your GitHub organization. You will be prompted to do so as you try to enable `workflows` feature for your organization the first time.
 
 
 ### Deployment notifications
 We support a separate notifications for your deployments. These deployments can happen from Actions or from external sources using [Deployments api](https://docs.github.com/en/rest/deployments/deployments?apiVersion=2022-11-28#about-the-deployments-api). 
 
-Deployment status notifications for your environments. And the notification shows workflow information if the environment is deployed from GitHub Action workflow.
 <p align="left"><img width="500" alt="Deployment status" src="images/TeamsDeploymentStatus.png"></p>
 
 You can enable/disable this feature by running:
@@ -182,27 +181,6 @@ You can enable/disable this feature by running:
 `@github subscribe/unsubscribe org/repo deployments`
 
 Note: If you are using GitHub actions and want to track your deployments to environments, we recommend to use the new `workflows` feature instead as it shows the full picture and gives you ability to approve your deployments inplace. 
-
-
-#### Updates to the app permissions for deployment notifications
-To receive the above notifications you need to grant access for Microsoft Teams in your GitHub organization.
-
-"deployments" is a default enabled feature similar to "issues", "pulls", "commits". However, you will not get deployment notifications unless you grant permissions in your organization.
-
-**Existing susbcriptions:**
-- Your existing subscriptions will continue to work. However you will not recieve deployment notification until you grant permissions.
-<p align="left"><img width="500" alt="Permissions" src="images/Permissions.png"></p>
-
-- You cannot modify your existing subscriptions until you update the app and grant permissions. We will notify you to update when you try to modify an existing susbcription.
-<p align="left"><img width="500" alt="Update app" src="images/TeamsUpdateApp.png"></p>
-
-- However, if you choose not to update the app, you can unsubscribe "deployments" feature for the existing subscriptions and then you will be able to modify your subscriptions.
-
-**New subscriptions:**
-- You cannot add a new subscription until you grant permissions in your GitHub organization as "deployments" is a default feature in your subscription. We will notify you to update when you try to add a new susbcription.
-
-You can directly update the app by going to your GiHub organization->settings->installed apps and update Microsoft Teams app for GitHub.
-<p align="left"><img width="500" alt="Update App" src="images/UpdateApp.png"></p>
 
 
 ### Mentions
