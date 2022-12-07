@@ -17,10 +17,10 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
    - [Customize notifications](#customize-notifications)
    - [Filters](#filters)
    - [PR and Issue notification cards and Threading](#pr-and-issue-notification-cards-and-threading)
-   - [Actions workflow notifications](#actions-workflow-notifications)
-   - [Deployment notifications](#deployments-and-actions-approval-notifications)
-   - [Mentions](#mentions)
    - [Move conversations into next steps](#move-conversations-into-next-steps)
+   - [Actions workflow notifications](#actions-workflow-notifications)
+   - [Deployment notifications](#deployment-notifications)
+   - [Mentions](#mentions)
    - [Unfurling GitHub links](#unfurling-github-links)
    - [Personal app experience](#personal-app-experience)
    - [Schedule Reminders](#schedule-reminders)
@@ -137,6 +137,32 @@ Any new event that happens on a pull request or issue (like comment/review/close
 
 Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved to ready, you will start getting the notifications
 
+### Move conversations into next steps
+Teams conversations often lead to decisions and actionable takeaways. You can perform following actions on GitHub directly from Microsoft Teams:
+
+#### Issue creation experience
+You can now create issue by just a click, right from the place where you collaborate. In any channel/personal app, you can now click on the three dots (...) at the top right corner of a message and choose 'Create an Issue' from the 'More actions' list. This will launch a create issue dialogue.
+
+<p align="left"><img width="500" alt="Issue Create Card" src="images/IssueCreateCard.png"></p>
+
+- The content of the message from which you have triggered this create issue flow will be filled into the description helping you get started on the issue. Also the link of the MS Teams conversation will be added to description in the end automatically giving you reference when you want to track the issue later. You can also edit the entire description if you want.
+- The last used repo in the channel will be automatically filled in. However, you can go ahead and change to the repo of your choice.
+- You can optionally fill in labels, assignees and milestones when you create an issue.
+Once the issue is created you will receive a confirmation card in the channel from where you have initiated the issue creation flow.
+
+Alternatively, you can create an issue from the commands by invoking @GitHub from the chat in your channel or personal app.
+
+Note: You need to be signed in and have necessary access to the repo to create an issue.
+
+#### Manage your issues and prs
+You can also peform other actions on your Issues and PR like
+- Close and ReOpen issue
+- Comment on issue and pull request
+
+<p align="left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.png"></p>
+
+Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
+
 ### Actions workflow notifications
 You can subscribe to GitHub Actions workflow run notifications from your channel or personal app using "workflows" feature.
 
@@ -199,16 +225,6 @@ When you receive notifications for Issues, PRs and Deployments, here are the cas
 Mentions will work only if you login to GitHub app from Microsoft Teams. When you login to GitHub app with your GitHub id, we map it with your Microsoft Teams id and ping you in Teams whenever you are mentioned in any of the GitHub notifications.  
 
 **Note**: If you have multiple Microsoft Teams tenants where you use GitHub app, mentions will work only in the tenant where you login to GitHub app the latest. 
-
-### Move conversations into next steps
-Teams conversations often lead to decisions and actionable takeaways. You can perform following actions on GitHub directly from Microsoft Teams:
-- Create issue
-- Close and ReOpen issue
-- Comment on issue and pull request
-
-<p align="left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.png"></p>
-
-Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
 ### Unfurling GitHub links
 When you share links to GitHub activities and properties in the channel, more details are automatically extracted and shown as preview in Microsoft Teams channel. We support link previews for:
