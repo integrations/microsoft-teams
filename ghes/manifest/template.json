@@ -14,10 +14,18 @@
     },
     "MicrosoftAppId": {
       "type": "string"
+    },
+    "pathParameter": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "If using in non-proxy mode don't set the path, else append _msteams to path"
+      }
     }
   },
   "variables": {
-    "uniqueName": "[format('gh{0}', uniqueString(resourceGroup().id, deployment().name))]"
+    "uniqueName": "[format('gh{0}', uniqueString(resourceGroup().id, deployment().name))]",
+     "endpoint": "[if(parameters('pathParameter'), format('https://{0}/_msteams/teams/message', parameters('GHESInstanceHostName')), format('https://{0}/teams/message', parameters('GHESInstanceHostName')))]"
   },
   "resources": [
     {
@@ -31,7 +39,7 @@
       },
       "properties": {
         "displayName": "GHE",
-        "endpoint": "[format('https://{0}/_msteams/teams/message', parameters('GHESInstanceHostName'))]",
+        "endpoint": "[variables('endpoint')]",
         "msaAppId": "[parameters('MicrosoftAppId')]",
         "msaAppType": "MultiTenant"
       }

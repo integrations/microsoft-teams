@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/0.1.2-preview/CreateUIDefinition.MultiVm.json#",
+    "handler": "Microsoft.Azure.CreateUIDef",
+    "version": "0.1.2-preview",
+    "parameters": {
+      "basics": [
+        {
+            "name": "GHESInstanceHostName",
+            "type": "Microsoft.Common.TextBox",
+            "label": "GHES Instance Host Name",
+            "toolTip": "The host name of the GHES instance or the proxy",
+            "constraints": {
+              "required": true
+            }
+        },
+        {
+            "name": "MicrosoftAppId",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Microsoft App ID",
+            "toolTip": "The Microsoft App ID for the bot",
+            "constraints": {
+              "required": true
+            }
+        },
+        {
+            "name": "pathParameter",
+            "type": "Microsoft.Common.CheckBox",
+            "label": "Append '_msteams' to path",
+            "toolTip": "Should be checked when using GHES instance name else keep unchecked using a proxy setup",
+            "constraints": {
+              "required": false
+            },
+            "visible": true
+          }
+      ],
+      "steps": [],
+      "outputs": {
+        "MicrosoftAppId": "[basics('MicrosoftAppId')]",
+        "GHESInstanceHostName": "[basics('GHESInstanceHostName')]",
+        "pathParameter": "[if(equals(basics('pathParameter'), true), 'true', 'false')]"
+      }
+    }
+  }
