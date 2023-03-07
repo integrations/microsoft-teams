@@ -26,6 +26,7 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
    - [Schedule Reminders](#schedule-reminders)
    - [Command Reference](#command-reference)
    - [Authorization](#authorization)
+- [GHES Integration](#ghes-integration)
 - [Future work](#future-work)
 - [Feedback](#feedback)
 --------
@@ -34,11 +35,9 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 #### GHEC - GA
 This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Microsoft Teams(Teams.microsoft.com). 
 
-#### GHES - Private preview
-GHES integration for Microsoft Teams is currently under private preview with GHES 3.6. 
-This will be a private preview and interested customers can enroll for the preview by creating an issue from [here](https://github.com/integrations/microsoft-teams/issues/new). We will help you with the onboarding process.
-
-We are targetting to GA our GitHub integration with GHES 3.8. 
+#### GHES - GA
+GHES integration with Microsoft Teams is now GA with GHES 3.8. 
+The detailed steps for integrating MS Teams with GHES can be found [here](#ghes-integration). 
 
 ### Installation
 You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
@@ -391,13 +390,31 @@ By granting the app access, you are providing the following authorizations to yo
 |---|---|
 |Read access to issues, metadata, pull requests, discussions, and repository projects | To render previews of links shared in Teams|
 
-## Upcoming features and roadmap
-We're constantly at work to improve the app, and soon you’ll see new features stated below. To request additional capabilities please [request a feature](https://github.com/integrations/microsoft-teams/issues/new/choose).
+## GHES Integration
+We are announcing GA for GHES integration with Microsoft Teams with GHES 3.8. With this integration, you will now be able to subscribe to your repositories in your GHES instance and get live updates about your Issues, PRs, Commits and Deployments in your MS teams channels and personal app. And you can also take actions like commenting, open/close issues and approve your deployments directly from chat. All the features that are available in our hosted GitHub integration (GHEC) will be available in GHES integration. 
 
-* Schedule reminders updates - Provide advanced controls for schedule reminders backed by a easy to use UI and remove administrator requirement for scheduling a reminder. `Shipped`
-* Support for GHES - We are supporting GHES integration as a private preview with GHES 3.6. We are targetting GA with GHES 3.8.
-* Issue create and manage capabilities - Provide capabilities to create and manage issues directly from your chat. `Shipped`
-* GitHub Actions notifications and manage capabilities - Provide capabilities to run, view and manage workflows from chat. `Shipped`
+### How does this integration work?
+Starting with GHES 3.8, we are shipping a dedicated ChatOps service bundled along with your GHES server. And you can choose to integrate with Microsoft Teams. With our integration for GHES, you will have
+1. A fully secure and scalable experience:
+All your subscriptions info and any other metadata stays within your GHES setup. So, you don't have to worry about data flowing to any external service.
+
+2. Bidirectional connectivity between GHES and Slack:
+Our GHES integration is not just a notification service. It will also enable you to perform actions directly from chat. So, the only prerequisite you need to ensure your GHES instance is accessible from MS Teams. 
+
+### Configuration steps
+1. Navigate to <instancename>:8443 and go to section “Chat Integration”
+2. Select the checkbox Enable GitHub Chat Integration
+3. Select MS teams tab
+4. Register application on Azure portal by going to the link mentioned.
+5. Enter your application registration name and for account type select “Multi-tenant” and click “Register 
+6. Take note of application ID
+7. Click on “Certificates & secret” and generate a new client secret.
+8. Take note of application ID and client secret and navigate back GHES instance settings
+9. Click on Deploy to Azure button
+10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create.
+11. Once the bot is provisioned. Return to the settings page and enter the app ID and client secret. Click on Save client settings.
+12. Once the settings are saved download the manifest from the generate manifest button. Click on green Save settings to persist the settings on the instance. Once settings are applied (could take 5-15 mins depending on the configuration). 
+13. Upload the manifest to MS teams app. Steps [here](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-app) 
 
 ## Feedback
 
