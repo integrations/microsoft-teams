@@ -403,17 +403,38 @@ Our GHES integration is not just a notification service. It will also enable you
 
 ### Configuration steps
 1. Navigate to <instancename>:8443 and go to section “Chat Integration”
+  
+  ![image3](https://user-images.githubusercontent.com/9424117/223645857-b115adba-558e-4b2f-9363-d6b5da0c9c59.png)
+  
 2. Select the checkbox Enable GitHub Chat Integration
 3. Select MS teams tab
 4. Register application on Azure portal by going to the link mentioned.
 5. Enter your application registration name and for account type select “Multi-tenant” and click “Register 
+  
+  ![image2](https://user-images.githubusercontent.com/9424117/223646172-d57582fa-ee33-4e0c-897f-f79c33838956.png)
+  
 6. Take note of application ID
+  
+  ![image15](https://user-images.githubusercontent.com/9424117/223646432-4a60de73-f5cc-4bfe-ab70-d63013551ed6.png)
+  
 7. Click on “Certificates & secret” and generate a new client secret.
 8. Take note of application ID and client secret and navigate back GHES instance settings
 9. Click on Deploy to Azure button
-10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create.
-11. Once the bot is provisioned. Return to the settings page and enter the app ID and client secret. Click on Save client settings.
+  
+  <img width="609" alt="image7" src="https://user-images.githubusercontent.com/9424117/223646342-83542888-e97d-494f-b2b5-89e4098496ff.png">
+  
+10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create. If your GHES instance is not reachable on the public internet enter the url that will forward the traffic to the instance in `GHES Instance Host Name` uncheck the `Append '_msteams' to path` option and ensure to give the endpoint in the next step as well.
+  
+  <img width="725" alt="image16" src="https://user-images.githubusercontent.com/9424117/223646635-86d1875e-8427-45c9-8d0e-c51bb7877072.png">
+  
+11. Once the bot is provisioned. Return to the settings page and enter the app ID and client secret. If the GHES endpoint is not reachable on public internet and the traffic is going to be forwarded enter that url in `Public Endpoint URL`. Click on Save client settings.
+  
+  ![image8](https://user-images.githubusercontent.com/9424117/223646708-301a50ad-8e5f-4488-96c5-0d91be694eae.png)
+  
 12. Once the settings are saved download the manifest from the generate manifest button. Click on green Save settings to persist the settings on the instance. Once settings are applied (could take 5-15 mins depending on the configuration). 
+  
+  ![image5](https://user-images.githubusercontent.com/9424117/223646754-8bb231f0-3293-4f84-8e62-0e06c82b50ab.png)
+  
 13. Upload the manifest to MS teams app. Steps [here](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-app) 
 
 ## Feedback
