@@ -391,7 +391,9 @@ By granting the app access, you are providing the following authorizations to yo
 |Read access to issues, metadata, pull requests, discussions, and repository projects | To render previews of links shared in Teams|
 
 ## GHES Integration
-We are announcing GA for GHES integration with Microsoft Teams with GHES 3.8. With this integration, you will now be able to subscribe to your repositories in your GHES instance and get live updates about your Issues, PRs, Commits and Deployments in your MS teams channels and personal app. And you can also take actions like commenting, open/close issues and approve your deployments directly from chat. All the features that are available in our hosted GitHub integration (GHEC) will be available in GHES integration. 
+We are announcing GA for GHES integration with Microsoft Teams with GHES 3.8. 
+
+With this integration, you will now be able to subscribe to your repositories in your GHES instance and get live updates about your Issues, PRs, Commits and Deployments in your MS teams channels and personal app. And you can also take actions like commenting, open/close issues and approve your deployments directly from chat. 
 
 ### How does this integration work?
 Starting with GHES 3.8, we are shipping a dedicated ChatOps service bundled along with your GHES server. And you can choose to integrate with Microsoft Teams. With our integration for GHES, you will have
@@ -399,10 +401,12 @@ Starting with GHES 3.8, we are shipping a dedicated ChatOps service bundled alon
 All your subscriptions info and any other metadata stays within your GHES setup. So, you don't have to worry about data flowing to any external service.
 
 2. Bidirectional connectivity between GHES and Slack:
-Our GHES integration is not just a notification service. It will also enable you to perform actions directly from chat. So, the only prerequisite you need to ensure your GHES instance is accessible from MS Teams. 
+Our GHES integration is not just a notification service. It will also enable you to perform actions directly from chat. So, the only prerequisite you need is to ensure your GHES instance is accessible from MS Teams. 
 
 ### Configuration steps
-1. Navigate to <instancename>:8443 and go to section “Chat Integration”
+The existing GitHub app you see in the app store can only be used for GHEC (hosted GitHub) integration. To integrate your GHES instance with MS Teams, you need to configure a private GHES app. Here are the steps to integrate with GHES.
+
+1. Navigate to "your-ghes-url:8443" and go to section “Chat Integrations”
   
   ![image3](https://user-images.githubusercontent.com/9424117/223645857-b115adba-558e-4b2f-9363-d6b5da0c9c59.png)
   
@@ -436,6 +440,8 @@ Our GHES integration is not just a notification service. It will also enable you
   ![image5](https://user-images.githubusercontent.com/9424117/223646754-8bb231f0-3293-4f84-8e62-0e06c82b50ab.png)
   
 13. Upload the manifest to MS teams app. Steps [here](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-app) 
+
+And now you have a dedicated GHES integration with Microsoft teams. All the features that are available in our hosted GitHub integration (GHEC) will be available in GHES integration.
 
 ## Feedback
 
