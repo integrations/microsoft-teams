@@ -400,8 +400,8 @@ Starting with GHES 3.8, we are shipping a dedicated ChatOps service bundled alon
 1. A fully secure and scalable experience:
 All your subscriptions info and any other metadata stays within your GHES setup. So, you don't have to worry about data flowing to any external service.
 
-2. Bidirectional connectivity between GHES and Slack:
-Our GHES integration is not just a notification service. It will also enable you to perform actions directly from chat. So, the only prerequisite you need is to ensure your GHES instance is accessible from MS Teams. 
+2. Connectivity between GHES and Azure Bot:
+Our GHES integration is not just a notification service. It will also enable you to perform actions directly from chat. So, the only prerequisite you need is to ensure your GHES instance is accessible from Azure Bot that is deployed when MS Teams integration is set up on GHES. 
 
 ### Configuration steps
 The existing GitHub app you see in the app store can only be used for GHEC (hosted GitHub) integration. To integrate your GHES instance with MS Teams, you need to configure a private GHES app. Here are the steps to integrate with GHES.
