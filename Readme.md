@@ -387,7 +387,7 @@ By granting the app access, you are providing the following authorizations to yo
 |Permission scope|Why we need it|
 |---|---|
 |Read access to issues, metadata, pull requests, discussions, and repository projects | To render previews of links shared in Teams|
-|Write access to issues, actions and pull requests | To take action from Teams by clicking a button on a card. e.g. create an issue, re-run jobs in a workflow or comment on a pull request|
+|Write access to issues, actions and pull requests | To take action from Teams by clicking a button on a card, e.g. create an issue, re-run jobs in a workflow or comment on a pull request|
 
 ## GHES Integration
 We are announcing GA for GHES integration with Microsoft Teams with GHES 3.8. 
