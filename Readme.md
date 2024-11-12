@@ -60,12 +60,12 @@ Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and 
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
-You need to be an organization / account owner to install the app. If you dont have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
+You need to be an organization / account owner to install the app. If you don't have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need to work on. You can find this app in your Organization settings > Applications > Installed apps. This is a one-time activity and after that you can subscribe to a repository / organization in the channel of your choice.
 
 The `@github` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@github unsubscribe <organization>/<repository>`
 
 ### Customize notifications
-You can customize your notifications by subscribing to activity that is relevant to your Teams channel, and unsubscribing from activity that is less helpful to your project.
+You can customize your notifications by subscribing to activity that are relevant to your Teams channel and unsubscribing from those that are less helpful to your project.
 
 You can configure them using following commands:
 `@github subscribe owner/repo [feature]`
@@ -88,7 +88,7 @@ These are disabled by default, and can be enabled with the '@github subscribe ow
 - discussions - Discussions created or answered
 - +label:"your label" - Filter issues, pull-requests and comments based on their labels.
 
-We also support repository notifications. You will get notified when your repo is made public or deleted. This notification is enabled by default and there is no separate feature to turn in off. Since repository update is a destructive activity, we want to notify the customer always.
+We also support repository notifications. You will get notified when your repo is made public or deleted. This notification is enabled by default and there is no separate feature to turn it off. Since a repository update is a destructive action, we want to notify the customer always.
 
 To see the list of subscribed features, use `@github subscribe list features`
 <p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
@@ -105,18 +105,18 @@ Branch filters allow filtering commit notifications. By default when you subscri
 You can unsubscribe from the commits feature using `@github unsubscribe org/repo commits.
 
 #### Label filters for issues and prs
-Label filters allow filtering incoming events based on a whitelisted label. You can add a label filter with the subscribe command
+Label filters allow filtering incoming events based on a whitelisted label. You can add a label filter with the subscribe command.
 `@github subscribe owner/repo +label:priority:HIGH`
 
 This creates a required-label filter with the value priority:HIGH. Incoming events that support filters are discarded unless they have that label. To update the existing filter just enter a new one, the old one will be updated. Currently, we only support having one filter. Multiple filters might be supported in the future.
 
-The notifications that are filtered by label are:
+The notifications that can be filtered by label:
 - issues
 - pull requests
 - reviews
 - comments (for both issues and pull requests)
 
-You can remove a filter by with unsubscribe command
+You can remove a filter using the unsubscribe command.
 '@github unsubscribe owner/repo +label:priority:HIGH'
 
 It is common to have certain special characters in labels. Therefore we added support for the most common special characters for label filters. Here are a few examples:
@@ -137,21 +137,21 @@ Any new event that happens on a pull request or issue (like comment/review/close
 Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved to ready, you will start getting the notifications
 
 ### Move conversations into next steps
-Teams conversations often lead to decisions and actionable takeaways. You can perform following actions on GitHub directly from Microsoft Teams:
+Teams conversations often lead to decisions and actionable takeaways. You can perform the following actions on GitHub directly from Microsoft Teams:
 
 #### Issue creation experience
-You can now create issue by just a click, right from the place where you collaborate. In any channel/personal app, you can now click on the three dots (...) at the top right corner of a message and choose 'Create an Issue' from the 'More actions' list. This will launch a create issue dialogue.
+You can now create an issue with just one click, right from the place where you collaborate. In any channel/personal app, you can now click on the three dots (...) at the top right corner of a message and choose 'Create an Issue' from the 'More actions' list. This will launch a create issue dialogue.
 
 <p align="left"><img width="500" alt="Issue Create Card" src="images/IssueCreateCard.png"></p>
 
 - The content of the message from which you have triggered this create issue flow will be filled into the description helping you get started on the issue. Also the link of the MS Teams conversation will be added to description in the end automatically giving you reference when you want to track the issue later. You can also edit the entire description if you want.
-- The last used repo in the channel will be automatically filled in. However, you can go ahead and change to the repo of your choice.
+- The last used repo in the channel will be selected by default. However, you can go ahead and change to the repo of your choice.
 - You can optionally fill in labels, assignees and milestones when you create an issue.
 Once the issue is created you will receive a confirmation card in the channel from where you have initiated the issue creation flow.
 
 Alternatively, you can create an issue from the commands by invoking @GitHub from the chat in your channel or personal app.
 
-Note: You need to be signed in and have necessary access to the repo to create an issue.
+**Note**: You need to be signed in and have necessary access to the repo to create an issue.
 
 #### Manage your issues and prs
 You can also peform other actions on your Issues and PR like
@@ -208,7 +208,7 @@ Note: If you are using GitHub actions and want to track your deployments to envi
 
 
 ### Mentions
-When you subscribe to a repository in Teams, you will now see yourself mentioned in the notifications where you are referred and needs your attention.
+When you subscribe to a repository in Teams, you will now see yourself mentioned in the notifications where you are referred and what needs your attention.
 <p align="left"><img width="500" alt="PR Mentions" src="images/PRMentions.png"></p>
 
 When you receive notifications for Issues, PRs and Deployments, here are the cases when you will be mentioned.
@@ -291,7 +291,7 @@ Note: Schedule reminders feature is available only for organizations (not for us
 2. This will show all the reminders configured for this organization in this channel and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
 <p align="left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
 
-Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
+**Note**: You need to be part of the organization and have write access to at least one repository to configure reminders for this organization. 
 
 3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
 <p align="left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
@@ -326,7 +326,7 @@ This will list all the reminders configured for the organization in this channel
 #### Personal reminders
 You can configure similar reminders in your personal chat too. However, unlike channel, the personal app only shows the reminders for the pull requests pending on you or your team.
 
-1. From the personal app, you need to run can run following command to configure a reminder for pending pull requests on your Organization.
+1. From the personal app, you need to run the following command to configure a reminder for pending pull requests on your Organization.
 `schedule organization`
 
 2. This will show all the reminders configured for this organization in your personal app and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
@@ -348,8 +348,8 @@ This will list all the reminders configured for the organization in this channel
 5. You can get the list of reminders configured in a channel by running
 `schedule list`
 
-**Note** : Please note that there is a minor bug on MSTeams adaptive card platform that effects the edit flow for the schedule reminders. 
-In your channel, if you had selected specific repos or teams to filter your reminders when you create,  and later if you try to reopen and edit the reminder, the previous selection of repos or team is not shown in the UI. So, if you are making any changes to the reminder, we suggest you to re-enter the teams/repos again. Incase if your reminder targets 'All repos' and/or 'All teams' in your org, then you will not face this bug. We apologise for this inconvinience. We are following up with MS Teams platform to resolve this issue.
+**Note** : Please note that there is a minor bug on MSTeams adaptive card platform that affects the edit flow for the schedule reminders. 
+In your channel, if you had selected specific repos or teams to filter your reminders when you create,  and later if you try to reopen and edit the reminder, the previous selection of repos or team is not shown in the UI. So, if you are making any changes to the reminder, we suggest you to re-enter the teams/repos again. In case if your reminder targets 'All repos' and/or 'All teams' in your org, then you will not face this bug. We apologise for this inconvenience. We are following up with MS Teams platform to resolve this issue.
 
 
 ### Command reference
@@ -426,7 +426,7 @@ The existing GitHub app you see in the app store can only be used for GHEC (host
   
   <img width="609" alt="image7" src="https://user-images.githubusercontent.com/9424117/223646342-83542888-e97d-494f-b2b5-89e4098496ff.png">
   
-10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create. If your GHES instance is not reachable on the public internet enter the url that will forward the traffic to the instance in `GHES Instance Host Name` uncheck the `Append '_msteams' to path` option and ensure to give the endpoint in the next step as well.
+10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create. If your GHES instance is not reachable over the public internet enter the url that will forward the traffic to the instance in `GHES Instance Host Name` uncheck the `Append '_msteams' to path` option and ensure to give the endpoint in the next step as well.
   
   <img width="725" alt="image16" src="https://user-images.githubusercontent.com/9424117/223646635-86d1875e-8427-45c9-8d0e-c51bb7877072.png">
   
