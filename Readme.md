@@ -26,19 +26,12 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
    - [Schedule Reminders](#schedule-reminders)
    - [Command Reference](#command-reference)
    - [Authorization](#authorization)
+- [GHEC Integration](#ghec-integration)
 - [GHES Integration](#ghes-integration)
 - [Future work](#future-work)
 - [Feedback](#feedback)
 --------
 ## Installing the GitHub integration for Teams
-### Requirements
-#### GHEC - GA
-This app officially supports GitHub.com (which includes our GitHub Enterprise cloud-hosted offering) and Microsoft Teams(Teams.microsoft.com). 
-
-#### GHES - GA
-GHES integration with Microsoft Teams is now GA with GHES 3.8. 
-The detailed steps for integrating MS Teams with GHES can be found [here](#ghes-integration). 
-
 ### Installation
 You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
 
@@ -388,6 +381,10 @@ By granting the app access, you are providing the following authorizations to yo
 |---|---|
 |Read access to issues, metadata, pull requests, discussions, and repository projects | To render previews of links shared in Teams|
 |Write access to issues, actions and pull requests | To take action from Teams by clicking a button on a card, e.g. create an issue, re-run jobs in a workflow or comment on a pull request|
+
+## GHEC Integration
+
+_documentation is currently work in progress. Learn more about [GitHub Enterprise Cloud with Data Residency](https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/about-github-enterprise-cloud-with-data-residency)_
 
 ## GHES Integration
 We are announcing GA for GHES integration with Microsoft Teams with GHES 3.8. 
