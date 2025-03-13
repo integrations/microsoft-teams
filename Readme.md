@@ -384,7 +384,8 @@ By granting the app access, you are providing the following authorizations to yo
 
 ## GHEC Integration
 
-_documentation is currently work in progress. Learn more about [GitHub Enterprise Cloud with Data Residency](https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/about-github-enterprise-cloud-with-data-residency)_
+### GHEC with Data Residency (ghe.com)
+The data residency version of the Microsoft Teams app can be installed from AppSource [here](https://appsource.microsoft.com/en-us/product/office/WA200008122). 
 
 ## GHES Integration
 We are announcing GA for GHES integration with Microsoft Teams with GHES 3.8. 
