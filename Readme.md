@@ -264,6 +264,8 @@ With our GitHub app, you also get a personal app in MS Teams where you can subsc
 In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat but they are not grouped under parent cards. Instead, you get independent notifications.
 <p align="left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
 
+In the personal app, omit the @github prefix when sending commands.
+
 ### Schedule Reminders
 You can configure schedule reminders for pending pull requests. With this feature you get periodic reminders of pending pull requests as part of your channel or personal chat.
 <p align="left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
@@ -363,6 +365,8 @@ The following table lists all the commands you can use in your Microsoft Teams c
 | @github schedule <organization> | List the reminders scheduled for the organization in this channel |
 | @github schedule list	| List all the reminders configured in this channel |
 | @github signout	| Disconnect with your GitHub Account and remove all subscriptions |
+
+Note: When running commands in the personal app omit the @github prefix.
 
 ### Authorization
 By granting the app access, you are providing the following authorizations to your GitHub and Microsoft Teams accounts:
