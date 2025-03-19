@@ -264,7 +264,7 @@ With our GitHub app, you also get a personal app in MS Teams where you can subsc
 In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat but they are not grouped under parent cards. Instead, you get independent notifications.
 <p align="left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
 
-In the personal app you should not use the @github prefix when sending commands.
+In the personal app, omit the @github prefix when sending commands.
 
 ### Schedule Reminders
 You can configure schedule reminders for pending pull requests. With this feature you get periodic reminders of pending pull requests as part of your channel or personal chat.
