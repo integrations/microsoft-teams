@@ -446,6 +446,5 @@ The existing GitHub app you see in the app store can only be used for GHEC (host
 
 And now you have a dedicated GHES integration with Microsoft teams. All the features that are available in our hosted GitHub integration (GHEC) will be available in GHES integration.
 
-## Feedback
-
-Please [create an issue](https://github.com/integrations/microsoft-teams/issues/new) to request a feature or report a problem.
+## Questions? Need help?
+If you need support or help please fill out GitHub's [Support form](https://support.github.com/contact?legacy&source=subtitle&tags=rr-general-technical&subject%5D=Re:Microsoft%20Teams%20Integration) and your request will be routed to the right team at GitHub.
