@@ -323,7 +323,7 @@ This will list all the reminders configured for the organization in this channel
 #### Personal reminders
 You can configure similar reminders in your personal chat too. However, unlike channel, the personal app only shows the reminders for the pull requests pending on you or your team.
 
-1. From the personal app, you need to run can run following command to configure a reminder for pending pull requests on your Organization.
+1. From the personal app, you need to run the following command to configure a reminder for pending pull requests on your Organization.
 `schedule organization`
 
 2. This will show all the reminders configured for this organization in your personal app and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
