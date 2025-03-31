@@ -41,8 +41,7 @@
         "displayName": "GHE",
         "endpoint": "[variables('endpoint')]",
         "msaAppId": "[parameters('MicrosoftAppId')]",
-        "msaAppType": "MultiTenant",
-        "disableLocalAuth": true
+        "msaAppType": "MultiTenant"
       }
     },
     {
