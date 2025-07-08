@@ -41,7 +41,7 @@ Upon installing, a welcome message is displayed as shown in the following image.
 <p align="left"><img width="500" alt="Install success" src="images/NewWelcomeTeams.png"></p>
 
 ## Get Started
-At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a @github signin command.
+At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a `@github signin` command.
 <p align="left"><img width="500" alt="Signin success" src="images/NewGettingStarted.png"></p>
 
 ### Subscribe notifications
