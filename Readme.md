@@ -430,11 +430,14 @@ The existing GitHub app you see in the app store can only be used for GHEC (host
   
   <img width="609" alt="image7" src="https://user-images.githubusercontent.com/9424117/223646342-83542888-e97d-494f-b2b5-89e4098496ff.png">
   
-10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create. If your GHES instance is not reachable on the public internet enter the url that will forward the traffic to the instance in `GHES Instance Host Name` uncheck the `Append '_msteams' to path` option and ensure to give the endpoint in the next step as well.
+10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create.
+
+    - If your GitHub Enterprise instance **is reachable on the public internet** make sure that the `Append '_msteams' to path` option is **checked**.
+    - If your GitHub Enterprise instance **is not reachable on the public internet and requires a proxy** make sure that the `Append '_msteams' to path` option is **unchecked**. Also, enter the URL that will forward the traffic to the instance in `GHES Instance Host Name`.
   
   <img width="725" alt="image16" src="https://user-images.githubusercontent.com/9424117/223646635-86d1875e-8427-45c9-8d0e-c51bb7877072.png">
   
-11. Once the bot is provisioned. Return to the settings page and enter the app ID and client secret. If the GHES endpoint is not reachable on public internet and the traffic is going to be forwarded enter that url in `Public Endpoint URL`. Click on Save client settings.
+11. Once the bot is provisioned. Return to the settings page and enter the app ID and client secret. If the GHES endpoint is not reachable on public internet and the traffic is going to be forwarded enter that URL in `Public Endpoint URL`. Click on Save client settings.
   
   ![image8](https://user-images.githubusercontent.com/9424117/223646708-301a50ad-8e5f-4488-96c5-0d91be694eae.png)
   
