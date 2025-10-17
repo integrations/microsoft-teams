@@ -4,7 +4,7 @@
 
 GitHub is the world's leading software development platform. [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is one of the most popular communication platforms where modern development teams come together to build world-class products and services. With two of your most important workspaces connected, you'll stay updated on what's happening on GitHub without leaving Microsoft Teams.
 
-Developers spend a considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). The GitHub integration for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in your Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward.
+Developers spend a considerable amount of time communicating with the team, monitoring the issues, pull requests and deployment statuses. This necessitates constant switching of context between GitHub and Microsoft Teams (collaborate). GitHub Notifications for Microsoft Teams gives you and your teams full visibility into your GitHub projects right in your Teams channels, where you generate ideas, triage issues and collaborate with other teams to move projects forward.
 
 GitHub integration for Microsoft Teams is now GA and is built and maintained by GitHub.
 
@@ -31,9 +31,9 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 - [Future work](#future-work)
 - [Feedback](#feedback)
 --------
-## Installing the GitHub integration for Teams
+## Installing GitHub Notifications for Teams
 ### Installation
-You can go to Microsoft teams app store and install GitHub app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
+You can go to Microsoft teams app store and install GitHub Notifications app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
 
 <p align="left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
 
@@ -41,32 +41,34 @@ Upon installing, a welcome message is displayed as shown in the following image.
 <p align="left"><img width="500" alt="Install success" src="images/NewWelcomeTeams.png"></p>
 
 ## Get Started
-At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a `@github signin` command.
+
+At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a `@GitHub Notifications signin` command.
+
 <p align="left"><img width="500" alt="Signin success" src="images/NewGettingStarted.png"></p>
 
 ### Subscribe notifications
-You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@github subscribe <organization>/<repository>` command.
+You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@GitHub Notifications subscribe <organization>/<repository>` command.
 <p align="left"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
 
 Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and you need to grant access to the repositories you would like to subscribe.
 <p align="left"><img width="500" alt="Install App" src="images/InstallApp.PNG"></p>
 
-If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing the GitHub integration for Teams, the `@github subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
+If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing  GitHub Notifications for Teams, the `@GitHub Notifications subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
 You need to be an organization / account owner to install the app. If you dont have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
 
-The `@github` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@github unsubscribe <organization>/<repository>`
+The `@GitHub Notifications` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@GitHub Notifications unsubscribe <organization>/<repository>`
 
 ### Customize notifications
 You can customize your notifications by subscribing to activity that is relevant to your Teams channel, and unsubscribing from activity that is less helpful to your project.
 
 You can configure them using following commands:
-`@github subscribe owner/repo [feature]`
-`@github unsubscribe owner/repo [feature]`
+`@GitHub Notifications subscribe owner/repo [feature]`
+`@GitHub Notifications unsubscribe owner/repo [feature]`
 
 <p align="left"><img width="500" alt="Customize notifications" src="images/CustomizeNotifications.PNG"></p>
 
-Below features are enabled by default, and can be disabled with the `@github unsubscribe owner/repo [feature]` command:
+Below features are enabled by default, and can be disabled with the `@GitHub Notifications unsubscribe owner/repo [feature]` command:
 - issues - Opened / closed / ReOpened
 - pulls - New / merged / Close / ReOpen
 - commits - New commits on the default branch (usually main)
@@ -74,7 +76,7 @@ Below features are enabled by default, and can be disabled with the `@github uns
 - deployments - Deployment status notifications
 - releases - New release and pre-release published
 
-These are disabled by default, and can be enabled with the '@github subscribe owner/repo [feature]' command:
+These are disabled by default, and can be enabled with the '@GitHub Notifications subscribe owner/repo [feature]' command:
 - reviews - Pull request reviews
 - workflows - Actions workflows and approval notifications
 - branches - branch creation and deletion
@@ -83,23 +85,23 @@ These are disabled by default, and can be enabled with the '@github subscribe ow
 
 We also support repository notifications. You will get notified when your repo is made public or deleted. This notification is enabled by default and there is no separate feature to turn in off. Since repository update is a destructive activity, we want to notify the customer always.
 
-To see the list of subscribed features, use `@github subscribe list features`
+To see the list of subscribed features, use `@GitHub Notifications subscribe list features`
 <p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
 
 ### Filters
 #### Branch filters for commits
 Branch filters allow filtering commit notifications. By default when you subscribe for commits feature, you will get notifications for your default branch (i.e. main). However, you can choose to filter on a specific branch, or a pattern of branches or all branches.
 
-- `@github subscribe org/repo commits`  for commit notifications from a default branch.
-- `@github subscribe org/repo commits:*`  for commit notifications across all the branches.
-- `@github subscribe org/repo commits:myBranch`  for commit notifications from a specific branch.
-- `@github subscribe org/repo commits:users/*`  for commit notifications from a pattern of branches.
+- `@GitHub Notifications subscribe org/repo commits`  for commit notifications from a default branch.
+- `@GitHub Notifications subscribe org/repo commits:*`  for commit notifications across all the branches.
+- `@GitHub Notifications subscribe org/repo commits:myBranch`  for commit notifications from a specific branch.
+- `@GitHub Notifications subscribe org/repo commits:users/*`  for commit notifications from a pattern of branches.
 
-You can unsubscribe from the commits feature using `@github unsubscribe org/repo commits.
+You can unsubscribe from the commits feature using `@GitHub Notifications unsubscribe org/repo commits.
 
 #### Label filters for issues and prs
 Label filters allow filtering incoming events based on a whitelisted label. You can add a label filter with the subscribe command
-`@github subscribe owner/repo +label:priority:HIGH`
+`@GitHub Notifications subscribe owner/repo +label:priority:HIGH`
 
 This creates a required-label filter with the value priority:HIGH. Incoming events that support filters are discarded unless they have that label. To update the existing filter just enter a new one, the old one will be updated. Currently, we only support having one filter. Multiple filters might be supported in the future.
 
@@ -110,7 +112,7 @@ The notifications that are filtered by label are:
 - comments (for both issues and pull requests)
 
 You can remove a filter by with unsubscribe command
-'@github unsubscribe owner/repo +label:priority:HIGH'
+'@GitHub Notifications unsubscribe owner/repo +label:priority:HIGH'
 
 It is common to have certain special characters in labels. Therefore we added support for the most common special characters for label filters. Here are a few examples:
 - label:priority:HIGH
@@ -142,7 +144,7 @@ You can now create issue by just a click, right from the place where you collabo
 - You can optionally fill in labels, assignees and milestones when you create an issue.
 Once the issue is created you will receive a confirmation card in the channel from where you have initiated the issue creation flow.
 
-Alternatively, you can create an issue from the commands by invoking @GitHub from the chat in your channel or personal app.
+Alternatively, you can create an issue from the commands by invoking @GitHub Notifications from the chat in your channel or personal app.
 
 Note: You need to be signed in and have necessary access to the repo to create an issue.
 
@@ -171,7 +173,7 @@ You can subscribe to GitHub Actions workflow run notifications from your channel
 Getting notified about each and every workflow run notification can be noisy. So, we are providing you capability to filter the notifications based on your requirement.
 You can filter your actions workflows notifications based on name, event, actor and/or branch. You can filter the notifications as below.
 
-`@github subscribe owner/repo workflows:{name:"your workflow name" event:"workflow event" branch:"branch name" actor:"actor name"}`
+`@GitHub Notifications subscribe owner/repo workflows:{name:"your workflow name" event:"workflow event" branch:"branch name" actor:"actor name"}`
 
 - **name**: Name of your workflow
 - **event**: The event on which the workflow is triggered. You can find all the available events list [here](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#available-events).
@@ -179,16 +181,16 @@ You can filter your actions workflows notifications based on name, event, actor 
 - **branch**: The branch on which the workflow is running. Only incase where pull_request event is included, the branch will be the target branch the pull request is created for.
 
 You can pass multiple entries for each of the events in as a comma separate list as below example:
-`@github subscribe org/repo workflows:{event:"pull_request","push" branch:"main","dev" actor:"ashokirla"}`
+`@GitHub Notifications subscribe org/repo workflows:{event:"pull_request","push" branch:"main","dev" actor:"ashokirla"}`
 
 By default, when you configure workflow notifications without passing any filters, it is configured for workflows triggered via pull requests targeting your default branch.
 You can pass one or multiple entries. 
 
 You can unsubscribe for workflows notifications by just running the below command:
-`@github unsubscribe org/repo workflows`
+`@GitHub Notifications unsubscribe org/repo workflows`
 
 #### Updates to the app permissions
-To subscribe and receive the notifications for actions workflow run updates you need to grant access to Actions events in your organization for GitHub app in MS Teams. You may be prompted to do so as you try to enable `workflows` feature for your organization the first time.
+To subscribe and receive the notifications for actions workflow run updates you need to grant access to Actions events in your organization for GitHub Notifications in MS Teams. You may be prompted to do so as you try to enable `workflows` feature for your organization the first time.
 
 ### Deployment notifications
 We support a separate notifications for your deployments. These deployments can happen from Actions or from external sources using [Deployments api](https://docs.github.com/en/rest/deployments/deployments?apiVersion=2022-11-28#about-the-deployments-api). 
@@ -197,7 +199,7 @@ We support a separate notifications for your deployments. These deployments can 
 
 You can enable/disable this feature by running:
 
-`@github subscribe/unsubscribe org/repo deployments`
+`@GitHub Notifications subscribe/unsubscribe org/repo deployments`
 
 Note: If you are using GitHub actions and want to track your deployments to environments, we recommend to use the new `workflows` feature instead as it shows the full picture and gives you ability to approve your deployments inplace. 
 
@@ -241,9 +243,9 @@ Discussions and discussion comments can be automatically unfurled in Teams.
 
 <img width="490" alt="An example discussion link unfurl on Microsoft Teams" src="https://user-images.githubusercontent.com/858504/152766427-b3f8efa5-7aa9-4ef9-a5f1-8bea79d49ad8.png">
 
-Unfurling links to discussions requires the `Discussions (read)` permission to be granted to the installed GitHub Teams app in your organization or repository.
+Unfurling links to discussions requires the `Discussions (read)` permission to be granted to the installed GitHub Notifications app in your organization or repository.
 
-If you have previously installed the GitHub Teams app and you aren't able to unfurl discussion links, you may need to update your app to have the latest permissions.
+If you have previously installed the GitHub Notifications app and you aren't able to unfurl discussion links, you may need to update your app to have the latest permissions.
 
 You can update your installation's permissions by following these steps:
 1. Go to your organization settings tab.
@@ -257,14 +259,14 @@ You can update your installation's permissions by following these steps:
 Note: We're working on making this process easier in the future with a prompt from the Teams integration itself – stay tuned!
 
 ### Personal app experience
-With our GitHub app, you also get a personal app in MS Teams where you can subscribe to your repos and track your work. The notifications will be posted in the GitHub personal chat that is visible only for you. All the commands and notifications available in your channel are also available in Personal chat for GitHub.
+With our GitHub Notifications app, you also get a personal app in MS Teams where you can subscribe to your repos and track your work. The notifications will be posted in the GitHub personal chat that is visible only for you. All the commands and notifications available in your channel are also available in Personal chat for GitHub.
 
 <p align="left"><img width="500" alt="Personal App" src="images/PersonalApp.PNG"></p>
 
 In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat but they are not grouped under parent cards. Instead, you get independent notifications.
 <p align="left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
 
-In the personal app, omit the @github prefix when sending commands.
+In the personal app, omit the @GitHub Notifications prefix when sending commands.
 
 ### Schedule Reminders
 You can configure schedule reminders for pending pull requests. With this feature you get periodic reminders of pending pull requests as part of your channel or personal chat.
@@ -280,7 +282,7 @@ We made significant improvements to schedule reminders experience.
 Here are the steps to configure reminders for your pending pull requests.
 
 1. From Teams' channel, the user needs to run can run following command to configure a reminder for pending pull requests on your Organization.
-`@github schedule organization`
+`@GitHub Notifications schedule organization`
 
 Note: Schedule reminders feature is available only for organizations (not for user accounts). And for free organizations, you can only configure reminders for public repositores. However, if you have a paid plan, you can also configure reminders for private repositories in your organization.
 
@@ -313,12 +315,12 @@ All of the above settings will ensure you get reminders for the pull request tha
 
 
 4. You can edit or remove reminders for a specific organization by running the following command
-`@github schedule organization`
+`@GitHub Notifications schedule organization`
 <p align="left"><img width="500" alt="ListReminders" src="images/ListReminders.png"></p>
 This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
 
 5. You can get the list of reminders configured in a channel by running
-`@github schedule list`
+`@GitHub Notifications schedule list`
 
 #### Personal reminders
 You can configure similar reminders in your personal chat too. However, unlike channel, the personal app only shows the reminders for the pull requests pending on you or your team.
@@ -355,18 +357,18 @@ The following table lists all the commands you can use in your Microsoft Teams c
 
 |Command	| Functionality |
 | -------------------- |----------------|
-| @github signin	| Connect to your GitHub Account |
-| @github subscribe <organization>/<Repository>	| Subscribe to and Organization or Repository |
-| @github subscribe <organization>/<Repository>	[feature] | Subscribe to specific feature in an Organization or Repository |
-| @github subscribe list	| List the subscriptions in the channel |
-| @github subscribe list	features | List the subscriptions in the channel and the features subscribed |
-| @github unsubscribe <Organization>/<Repository>	| Unsubscribe from Organization or Repository |
-| @github unsubscribe <Organization>/<Repository>	[feature] | Unsubscribe a specific feature in an Organization or Repository |
-| @github schedule <organization> | List the reminders scheduled for the organization in this channel |
-| @github schedule list	| List all the reminders configured in this channel |
-| @github signout	| Disconnect with your GitHub Account and remove all subscriptions |
+| @GitHub Notifications signin	| Connect to your GitHub Account |
+| @GitHub Notifications subscribe <organization>/<Repository>	| Subscribe to and Organization or Repository |
+| @GitHub Notifications subscribe <organization>/<Repository>	[feature] | Subscribe to specific feature in an Organization or Repository |
+| @GitHub Notifications subscribe list	| List the subscriptions in the channel |
+| @GitHub Notifications subscribe list	features | List the subscriptions in the channel and the features subscribed |
+| @GitHub Notifications unsubscribe <Organization>/<Repository>	| Unsubscribe from Organization or Repository |
+| @GitHub Notifications unsubscribe <Organization>/<Repository>	[feature] | Unsubscribe a specific feature in an Organization or Repository |
+| @GitHub Notifications schedule <organization> | List the reminders scheduled for the organization in this channel |
+| @GitHub Notifications schedule list	| List all the reminders configured in this channel |
+| @GitHub Notifications signout	| Disconnect with your GitHub Account and remove all subscriptions |
 
-Note: When running commands in the personal app omit the @github prefix.
+Note: When running commands in the personal app omit the @GitHub Notifications prefix.
 
 ### Authorization
 By granting the app access, you are providing the following authorizations to your GitHub and Microsoft Teams accounts:
@@ -377,7 +379,7 @@ By granting the app access, you are providing the following authorizations to yo
 |---|---|
 |Access private conversations between you and the App | To message you with instructions.  |
 |Add link previews to GitHub.com to messages| To render rich links to `github.com`|
-|Add github commands| To add the `@github` command to your Team channels |
+|Add github commands| To add the `@GitHub Notifications` command to your Team channels |
 |View the organization's name, email domain, and icon| To store subscriptions you set up|
 |Post messages as the app| To notify you of activity that happens on GitHub|
 
@@ -430,11 +432,14 @@ The existing GitHub app you see in the app store can only be used for GHEC (host
   
   <img width="609" alt="image7" src="https://user-images.githubusercontent.com/9424117/223646342-83542888-e97d-494f-b2b5-89e4098496ff.png">
   
-10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create. If your GHES instance is not reachable on the public internet enter the url that will forward the traffic to the instance in `GHES Instance Host Name` uncheck the `Append '_msteams' to path` option and ensure to give the endpoint in the next step as well.
+10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname and the app ID previously generated and click Review + create.
+
+    - If your GitHub Enterprise instance **is reachable on the public internet** make sure that the `Append '_msteams' to path` option is **checked**.
+    - If your GitHub Enterprise instance **is not reachable on the public internet and requires a proxy** make sure that the `Append '_msteams' to path` option is **unchecked**. Also, enter the URL that will forward the traffic to the instance in `GHES Instance Host Name`.
   
   <img width="725" alt="image16" src="https://user-images.githubusercontent.com/9424117/223646635-86d1875e-8427-45c9-8d0e-c51bb7877072.png">
   
-11. Once the bot is provisioned. Return to the settings page and enter the app ID and client secret. If the GHES endpoint is not reachable on public internet and the traffic is going to be forwarded enter that url in `Public Endpoint URL`. Click on Save client settings.
+11. Once the bot is provisioned. Return to the settings page and enter the app ID and client secret. If the GHES endpoint is not reachable on public internet and the traffic is going to be forwarded enter that URL in `Public Endpoint URL`. Click on Save client settings.
   
   ![image8](https://user-images.githubusercontent.com/9424117/223646708-301a50ad-8e5f-4488-96c5-0d91be694eae.png)
   
