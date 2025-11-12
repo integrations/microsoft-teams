@@ -33,21 +33,21 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 ### Installation
 You can go to Microsoft teams app store and install GitHub Notifications app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
 
-<p align="left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
 
 Upon installing, a welcome message is displayed as shown in the following image. Use the ``@GitHub`` handle to start interacting with the app.
-<p align="left"><img width="500" alt="Install success" src="images/NewWelcomeTeams.png"></p>
+<p style="text-align: left"><img width="500" alt="Install success" src="images/NewWelcomeTeams.png"></p>
 
 ## Get Started
 At this point, your Teams and GitHub user accounts are not linked. To link the two accounts, authenticate to GitHub using a @GitHub Notifications signin command.
-<p align="left"><img width="500" alt="Signin success" src="images/NewGettingStarted.png"></p>
+<p style="text-align: left"><img width="500" alt="Signin success" src="images/NewGettingStarted.png"></p>
 
 ### Subscribe notifications
 You can subscribe to get notifications for pull requests and issues for an Organization or Repository's activity using `@GitHub Notifications subscribe <organization>/<repository>` command.
-<p align="left"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Subscribe" src="images/Subscribe.PNG"></p>
 
 Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and you need to grant access to the repositories you would like to subscribe.
-<p align="left"><img width="500" alt="Install App" src="images/InstallApp.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Install App" src="images/InstallApp.PNG"></p>
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing  GitHub Notifications for Teams, the `@GitHub Notifications subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
@@ -62,7 +62,7 @@ You can configure them using following commands:
 `@GitHub Notifications subscribe owner/repo [feature]`
 `@GitHub Notifications unsubscribe owner/repo [feature]`
 
-<p align="left"><img width="500" alt="Customize notifications" src="images/CustomizeNotifications.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Customize notifications" src="images/CustomizeNotifications.PNG"></p>
 
 Below features are enabled by default, and can be disabled with the `@GitHub Notifications unsubscribe owner/repo [feature]` command:
 - issues - Opened / closed / ReOpened
@@ -82,7 +82,7 @@ These are disabled by default, and can be enabled with the '@GitHub Notification
 We also support repository notifications. You will get notified when your repo is made public or deleted. This notification is enabled by default and there is no separate feature to turn in off. Since repository update is a destructive activity, we want to notify the customer always.
 
 To see the list of subscribed features, use `@GitHub Notifications subscribe list features`
-<p align="left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
+<p style="text-align: left"><img width="500" alt="List Features notifications" src="images/ListFeatures.PNG"></p>
 
 ### Filters
 #### Branch filters for commits
@@ -120,10 +120,10 @@ It is common to have certain special characters in labels. Therefore we added su
 ### PR and Issue notification cards and Threading
 Notifications for any PR and Issue are grouped under a parent card as replies. The parent card always shows the latest status of the PR/Issue along with other meta-data like title, description, assignees, reviewers, labels and checks. Threading gives context and helps improve collaboration in the channel.
 
-<p align="left"><img width="500" alt="PR Card" src="images/PRCard.PNG"></p>
+<p style="text-align: left"><img width="500" alt="PR Card" src="images/PRCard.PNG"></p>
 
 Any new event that happens on a pull request or issue (like comment/review/close/merge) is added as a reply to the parent card.
-<p align="left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Conversation" src="images/Conversation.PNG"></p>
 
 Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved to ready, you will start getting the notifications
 
@@ -133,7 +133,7 @@ Teams conversations often lead to decisions and actionable takeaways. You can pe
 #### Issue creation experience
 You can now create issue by just a click, right from the place where you collaborate. In any channel/personal app, you can now click on the three dots (...) at the top right corner of a message and choose 'Create an Issue' from the 'More actions' list. This will launch a create issue dialogue.
 
-<p align="left"><img width="500" alt="Issue Create Card" src="images/IssueCreateCard.png"></p>
+<p style="text-align: left"><img width="500" alt="Issue Create Card" src="images/IssueCreateCard.png"></p>
 
 - The content of the message from which you have triggered this create issue flow will be filled into the description helping you get started on the issue. Also the link of the MS Teams conversation will be added to description in the end automatically giving you reference when you want to track the issue later. You can also edit the entire description if you want.
 - The last used repo in the channel will be automatically filled in. However, you can go ahead and change to the repo of your choice.
@@ -149,14 +149,14 @@ You can also peform other actions on your Issues and PR like
 - Close and ReOpen issue
 - Comment on issue and pull request
 
-<p align="left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.png"></p>
+<p style="text-align: left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.png"></p>
 
 Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
 ### Actions workflow notifications
 You can subscribe to GitHub Actions workflow run notifications from your channel or personal app using "workflows" feature.
 
-<p align="left"><img width="800" alt="Workflows Card" src="images/Workflows.PNG"></p>
+<p style="text-align: left"><img width="800" alt="Workflows Card" src="images/Workflows.PNG"></p>
 
 - You will get notified when a new workflow run is triggered. 
 - You can track the approval notifications as a reply in the thread and you can approve the notifications directly from the channel/personal app.
@@ -191,7 +191,7 @@ To subscribe and receive the notifications for actions workflow run updates you 
 ### Deployment notifications
 We support a separate notifications for your deployments. These deployments can happen from Actions or from external sources using [Deployments api](https://docs.github.com/en/rest/deployments/deployments?apiVersion=2022-11-28#about-the-deployments-api). 
 
-<p align="left"><img width="500" alt="Deployment status" src="images/TeamsDeploymentStatus.png"></p>
+<p style="text-align: left"><img width="500" alt="Deployment status" src="images/TeamsDeploymentStatus.png"></p>
 
 You can enable/disable this feature by running:
 
@@ -202,7 +202,7 @@ Note: If you are using GitHub actions and want to track your deployments to envi
 
 ### Mentions
 When you subscribe to a repository in Teams, you will now see yourself mentioned in the notifications where you are referred and needs your attention.
-<p align="left"><img width="500" alt="PR Mentions" src="images/PRMentions.png"></p>
+<p style="text-align: left"><img width="500" alt="PR Mentions" src="images/PRMentions.png"></p>
 
 When you receive notifications for Issues, PRs and Deployments, here are the cases when you will be mentioned.
 - Assignee in an Issue
@@ -226,7 +226,7 @@ When you share links to GitHub activities and properties in the channel, more de
 - repositories
 - accounts or organizations
 
-<p align="left"><img width="500" alt="Comment Link" src="images/CommentLink.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Comment Link" src="images/CommentLink.PNG"></p>
 
 
 Previews of links will not be shown if the repository is private and the user that shared the link:
@@ -257,16 +257,16 @@ Note: We're working on making this process easier in the future with a prompt fr
 ### Personal app experience
 With our GitHub Notifications app, you also get a personal app in MS Teams where you can subscribe to your repos and track your work. The notifications will be posted in the GitHub personal chat that is visible only for you. All the commands and notifications available in your channel are also available in Personal chat for GitHub.
 
-<p align="left"><img width="500" alt="Personal App" src="images/PersonalApp.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Personal App" src="images/PersonalApp.PNG"></p>
 
 In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat but they are not grouped under parent cards. Instead, you get independent notifications.
-<p align="left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
+<p style="text-align: left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
 
 In the personal app, omit the @GitHub Notifications prefix when sending commands.
 
 ### Schedule Reminders
 You can configure schedule reminders for pending pull requests. With this feature you get periodic reminders of pending pull requests as part of your channel or personal chat.
-<p align="left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Schedule reminders" src="images/ScheduleReminders.PNG"></p>
 
 #### What's new with Schedule reminders?
 We made significant improvements to schedule reminders experience. 
@@ -284,12 +284,12 @@ Note: Schedule reminders feature is available only for organizations (not for us
 
 
 2. This will show all the reminders configured for this organization in this channel and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
-<p align="left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
+<p style="text-align: left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
 
 Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
 
 3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
-<p align="left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
+<p style="text-align: left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
 
 - Days: Choose what days of the week would you like to get the reminders
 - Times: Choose what times of day would you like to get reminders
@@ -312,7 +312,7 @@ All of the above settings will ensure you get reminders for the pull request tha
 
 4. You can edit or remove reminders for a specific organization by running the following command
 `@GitHub Notifications schedule organization`
-<p align="left"><img width="500" alt="ListReminders" src="images/ListReminders.png"></p>
+<p style="text-align: left"><img width="500" alt="ListReminders" src="images/ListReminders.png"></p>
 This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
 
 5. You can get the list of reminders configured in a channel by running
@@ -325,10 +325,10 @@ You can configure similar reminders in your personal chat too. However, unlike c
 `schedule organization`
 
 2. This will show all the reminders configured for this organization in your personal app and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
-<p align="left"><img width="500" alt="Personal Create Reminder" src="images/PersonalCreateReminder.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Personal Create Reminder" src="images/PersonalCreateReminder.PNG"></p>
 
 3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
-<p align="left"><img width="500" alt="Personal Reminder UI" src="images/PersonalReminderUI.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Personal Reminder UI" src="images/PersonalReminderUI.PNG"></p>
 
 - Days: Choose what days of the week would you like to get the reminders
 - Times: Choose what times of day would you like to get reminders
@@ -337,7 +337,7 @@ You can configure similar reminders in your personal chat too. However, unlike c
 
 4. You can edit or remove reminders for a specific organization by running the following command
 `schedule organization`
-<p align="left"><img width="500" alt="Personal List Reminders" src="images/PersonalListReminders.PNG"></p>
+<p style="text-align: left"><img width="500" alt="Personal List Reminders" src="images/PersonalListReminders.PNG"></p>
 This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
 
 5. You can get the list of reminders configured in a channel by running
