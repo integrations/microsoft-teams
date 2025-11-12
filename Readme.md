@@ -349,18 +349,18 @@ In your channel, if you had selected specific repos or teams to filter your remi
 
 The following table lists all the commands you can use in your Microsoft Teams channel.
 
-|Command	| Functionality |
-| -------------------- |----------------|
-| @GitHub Notifications signin	| Connect to your GitHub Account |
-| @GitHub Notifications subscribe <organization>/<Repository>	| Subscribe to and Organization or Repository |
-| @GitHub Notifications subscribe <organization>/<Repository>	[feature] | Subscribe to specific feature in an Organization or Repository |
-| @GitHub Notifications subscribe list	| List the subscriptions in the channel |
-| @GitHub Notifications subscribe list	features | List the subscriptions in the channel and the features subscribed |
-| @GitHub Notifications unsubscribe <Organization>/<Repository>	| Unsubscribe from Organization or Repository |
-| @GitHub Notifications unsubscribe <Organization>/<Repository>	[feature] | Unsubscribe a specific feature in an Organization or Repository |
-| @GitHub Notifications schedule <organization> | List the reminders scheduled for the organization in this channel |
-| @GitHub Notifications schedule list	| List all the reminders configured in this channel |
-| @GitHub Notifications signout	| Disconnect with your GitHub Account and remove all subscriptions |
+| Command	                                                                | Functionality                                                     |
+|-------------------------------------------------------------------------|-------------------------------------------------------------------|
+| @GitHub Notifications signin	                                           | Connect to your GitHub Account                                    |
+| @GitHub Notifications subscribe <organization>/<Repository>	            | Subscribe to and Organization or Repository                       |
+| @GitHub Notifications subscribe <organization>/<Repository>	[feature]   | Subscribe to specific feature in an Organization or Repository    |
+| @GitHub Notifications subscribe list	                                   | List the subscriptions in the channel                             |
+| @GitHub Notifications subscribe list	features                           | List the subscriptions in the channel and the features subscribed |
+| @GitHub Notifications unsubscribe <Organization>/<Repository>	          | Unsubscribe from Organization or Repository                       |
+| @GitHub Notifications unsubscribe <Organization>/<Repository>	[feature] | Unsubscribe a specific feature in an Organization or Repository   |
+| @GitHub Notifications schedule <organization>                           | List the reminders scheduled for the organization in this channel |
+| @GitHub Notifications schedule list	                                    | List all the reminders configured in this channel                 |
+| @GitHub Notifications signout	                                          | Disconnect with your GitHub Account and remove all subscriptions  |
 
 Note: When running commands in the personal app omit the @GitHub Notifications prefix.
 
@@ -369,20 +369,20 @@ By granting the app access, you are providing the following authorizations to yo
 
 #### Teams permission scopes
 
-|Permission scope|Why we need it|
-|---|---|
-|Access private conversations between you and the App | To message you with instructions.  |
-|Add link previews to GitHub.com to messages| To render rich links to `github.com`|
-|Add github commands| To add the `@GitHub Notifications` command to your Team channels |
-|View the organization's name, email domain, and icon| To store subscriptions you set up|
-|Post messages as the app| To notify you of activity that happens on GitHub|
+| Permission scope                                     | Why we need it                                                   |
+|------------------------------------------------------|------------------------------------------------------------------|
+| Access private conversations between you and the App | To message you with instructions.                                |
+| Add link previews to GitHub.com to messages          | To render rich links to `github.com`                             |
+| Add github commands                                  | To add the `@GitHub Notifications` command to your Team channels |
+| View the organization's name, email domain, and icon | To store subscriptions you set up                                |
+| Post messages as the app                             | To notify you of activity that happens on GitHub                 |
 
 #### GitHub permission scopes
 
-|Permission scope|Why we need it|
-|---|---|
-|Read access to issues, metadata, pull requests, discussions, and repository projects | To render previews of links shared in Teams|
-|Write access to issues, actions and pull requests | To take action from Teams by clicking a button on a card, e.g. create an issue, re-run jobs in a workflow or comment on a pull request|
+| Permission scope                                                                     | Why we need it                                                                                                                         |
+|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Read access to issues, metadata, pull requests, discussions, and repository projects | To render previews of links shared in Teams                                                                                            |
+| Write access to issues, actions and pull requests                                    | To take action from Teams by clicking a button on a card, e.g. create an issue, re-run jobs in a workflow or comment on a pull request |
 
 ## GHEC Integration
 
