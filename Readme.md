@@ -31,7 +31,7 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
 --------
 ## Installing GitHub Notifications for Teams
 ### Installation
-You can go to Microsoft teams app store and install GitHub Notifications app or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
+You can go to Microsoft Teams app store and install GitHub Notifications app, or you can directly install from [here](https://teams.microsoft.com/l/app/ca9e26b7-dce5-44a0-b2b7-a70a3d65ce25).
 
 <p style="text-align: left"><img width="500" alt="Teams app install" src="images/AppStore.PNG"></p>
 
@@ -51,7 +51,7 @@ Before you subscribe, a Microsoft Teams app needs to be installed in GitHub and 
 
 If you originally gave the app access to "All repositories" and you've created a new private repository on GitHub after installing  GitHub Notifications for Teams, the `@GitHub Notifications subscribe` command will work automatically on your new repository. If you installed the app on a subset of repositories, the app will prompt you to install it on the new repository.
 
-You need to be an organization / account owner to install the app. If you dont have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
+You need to be an organization / account owner to install the app. If you don't have access, you can request your account owner to configure the Microsoft Teams app to grant access to the repositories you need work on. You can find this app in your organization settings -> applications -> installed apps. This is a one time activity and after that you can subscribe to repository / organization in the channel of your choice.
 
 The `@GitHub Notifications` command also supports `unsubscribe`. To unsubscribe to notifications from a repository, use `@GitHub Notifications unsubscribe <organization>/<repository>`
 
@@ -86,7 +86,7 @@ To see the list of subscribed features, use `@GitHub Notifications subscribe lis
 
 ### Filters
 #### Branch filters for commits
-Branch filters allow filtering commit notifications. By default when you subscribe for commits feature, you will get notifications for your default branch (i.e. main). However, you can choose to filter on a specific branch, or a pattern of branches or all branches.
+Branch filters allow filtering commit notifications. By default, when you subscribe for commits feature, you will get notifications for your default branch (i.e. main). However, you can choose to filter on a specific branch, or a pattern of branches or all branches.
 
 - `@GitHub Notifications subscribe org/repo commits`  for commit notifications from a default branch.
 - `@GitHub Notifications subscribe org/repo commits:*`  for commit notifications across all the branches.
@@ -110,7 +110,7 @@ The notifications that are filtered by label are:
 You can remove a filter by with unsubscribe command
 '@GitHub Notifications unsubscribe owner/repo +label:priority:HIGH'
 
-It is common to have certain special characters in labels. Therefore we added support for the most common special characters for label filters. Here are a few examples:
+It is common to have certain special characters in labels. Therefore, we added support for the most common special characters for label filters. Here are a few examples:
 - label:priority:HIGH
 - label:teams/designers
 - label:"DO NOT MERGE"
@@ -131,11 +131,11 @@ Note: In case of Draft PRs, updates are not notified. Once the Draft PR is moved
 Teams conversations often lead to decisions and actionable takeaways. You can perform following actions on GitHub directly from Microsoft Teams:
 
 #### Issue creation experience
-You can now create issue by just a click, right from the place where you collaborate. In any channel/personal app, you can now click on the three dots (...) at the top right corner of a message and choose 'Create an Issue' from the 'More actions' list. This will launch a create issue dialogue.
+You can now create issue by just a click, right from the place where you collaborate. In any channel/personal app, you can now click on the three dots (...) in the top right corner of a message and choose 'Create an Issue' from the 'More actions' list. This will launch a "create issue" dialogue.
 
 <p style="text-align: left"><img width="500" alt="Issue Create Card" src="images/IssueCreateCard.png"></p>
 
-- The content of the message from which you have triggered this create issue flow will be filled into the description helping you get started on the issue. Also the link of the MS Teams conversation will be added to description in the end automatically giving you reference when you want to track the issue later. You can also edit the entire description if you want.
+- The content of the message from which you have triggered this create issue flow will be filled into the description helping you get started on the issue. Also, the link of the MS Teams conversation will be added to description in the end automatically giving you reference when you want to track the issue later. You can also edit the entire description if you want.
 - The last used repo in the channel will be automatically filled in. However, you can go ahead and change to the repo of your choice.
 - You can optionally fill in labels, assignees and milestones when you create an issue.
 Once the issue is created you will receive a confirmation card in the channel from where you have initiated the issue creation flow.
@@ -145,13 +145,13 @@ Alternatively, you can create an issue from the commands by invoking @GitHub Not
 Note: You need to be signed in and have necessary access to the repo to create an issue.
 
 #### Manage your issues and prs
-You can also peform other actions on your Issues and PR like
+You can also perform other actions on your Issues and PR like
 - Close and ReOpen issue
 - Comment on issue and pull request
 
 <p style="text-align: left"><img width="500" alt="Issue Comment Card" src="images/IssueCommentCard.png"></p>
 
-Users need to be signed into GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
+Users need to be signed in to GitHub to perform these actions from Teams. In case the user did not sign in and tried to perform this action, the user gets a notification to sign in before performing the action.
 
 ### Actions workflow notifications
 You can subscribe to GitHub Actions workflow run notifications from your channel or personal app using "workflows" feature.
@@ -159,9 +159,9 @@ You can subscribe to GitHub Actions workflow run notifications from your channel
 <p style="text-align: left"><img width="800" alt="Workflows Card" src="images/Workflows.PNG"></p>
 
 - You will get notified when a new workflow run is triggered. 
-- You can track the approval notifications as a reply in the thread and you can approve the notifications directly from the channel/personal app.
-- Once the workflow is completed, you will get a update as a reply in the thread so that you can see the complete context and history of the workflow run.
-- If something fails, you can choose to rerun the workflow in place and you can also enable debug logs if needed.
+- You can track the approval notifications as a reply in the thread, and you can approve the notifications directly from the channel/personal app.
+- Once the workflow is completed, you will get an update as a reply in the thread so that you can see the complete context and history of the workflow run.
+- If something fails, you can choose to rerun the workflow in place, and you can also enable debug logs if needed.
 
 *Note*: After 2025-03-10 (GHES version 3.17) you will no longer be notified about the progress of individual workflow jobs. See the [changelog](https://github.blog/changelog/2025-02-03-deprecation-of-real-time-github-actions-workflow-job-events-in-slack-and-microsoft-teams-apps/) for more details.
 
@@ -174,7 +174,7 @@ You can filter your actions workflows notifications based on name, event, actor 
 - **name**: Name of your workflow
 - **event**: The event on which the workflow is triggered. You can find all the available events list [here](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#available-events).
 - **actor**: The person who triggered or responsible for running of the workflow
-- **branch**: The branch on which the workflow is running. Only incase where pull_request event is included, the branch will be the target branch the pull request is created for.
+- **branch**: The branch on which the workflow is running. Only in case where pull_request event is included, the branch will be the target branch the pull request is created for.
 
 You can pass multiple entries for each of the events in as a comma separate list as below example:
 `@GitHub Notifications subscribe org/repo workflows:{event:"pull_request","push" branch:"main","dev" actor:"ashokirla"}`
@@ -231,7 +231,7 @@ When you share links to GitHub activities and properties in the channel, more de
 
 Previews of links will not be shown if the repository is private and the user that shared the link:
 - Not signed in to their GitHub account
-- The repository is not authorized i.e the Microsoft Teams app is not installed in the GitHub repo.
+- The repository is not authorized i.e. the Microsoft Teams app is not installed in the GitHub repo.
 
 #### Unfurling discussions
 
@@ -241,7 +241,7 @@ Discussions and discussion comments can be automatically unfurled in Teams.
 
 Unfurling links to discussions requires the `Discussions (read)` permission to be granted to the installed GitHub Notifications app in your organization or repository.
 
-If you have previously installed the GitHub Notifications app and you aren't able to unfurl discussion links, you may need to update your app to have the latest permissions.
+If you have previously installed the GitHub Notifications app, and you aren't able to unfurl discussion links, you may need to update your app to have the latest permissions.
 
 You can update your installation's permissions by following these steps:
 1. Go to your organization settings tab.
@@ -250,7 +250,7 @@ You can update your installation's permissions by following these steps:
 4. Review the list of updated permissions, which should include "Read access to Discussions".
 5. Click the "Accept new permissions" button.
 
-🎉 Now that you've updated the permissions, you can unfrul discussion links!
+🎉 Now that you've updated the permissions, you can unfurl discussion links!
 
 Note: We're working on making this process easier in the future with a prompt from the Teams integration itself – stay tuned!
 
@@ -259,7 +259,7 @@ With our GitHub Notifications app, you also get a personal app in MS Teams where
 
 <p style="text-align: left"><img width="500" alt="Personal App" src="images/PersonalApp.PNG"></p>
 
-In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat but they are not grouped under parent cards. Instead, you get independent notifications.
+In the personal app, threading is not supported by MS Teams. You get the same notifications in personal chat, but they are not grouped under parent cards. Instead, you get independent notifications.
 <p style="text-align: left"><img width="500" alt="Personal Notifications" src="images/PersonalNotifications.png"></p>
 
 In the personal app, omit the @GitHub Notifications prefix when sending commands.
@@ -271,7 +271,7 @@ You can configure schedule reminders for pending pull requests. With this featur
 #### What's new with Schedule reminders?
 We made significant improvements to schedule reminders experience. 
 - The old way of configuring reminders via commands is now gone.
-- We have introduced a first class UI to configure your pending pull request reminders. And as part of this UI, we added a bunch of advanced controls that will help you in fine tuning your reminders. 
+- We have introduced a first class UI to configure your pending pull request reminders. And as part of this UI, we added a bunch of advanced controls that will help you in fine-tuning your reminders. 
 - We relaxed the administrator requirement to configure reminders. Now, any contributor can schedule reminders in MS Teams for the repositories he/she has access.
 
 #### Channel reminders
@@ -280,14 +280,14 @@ Here are the steps to configure reminders for your pending pull requests.
 1. From Teams' channel, the user needs to run can run following command to configure a reminder for pending pull requests on your Organization.
 `@GitHub Notifications schedule organization`
 
-    Note: Schedule reminders feature is available only for organizations (not for user accounts). And for free organizations, you can only configure reminders for public repositores. However, if you have a paid plan, you can also configure reminders for private repositories in your organization.
+    Note: Schedule reminders feature is available only for organizations (not for user accounts). And for free organizations, you can only configure reminders for public repositories. However, if you have a paid plan, you can also configure reminders for private repositories in your organization.
 
 2. This will show all the reminders configured for this organization in this channel and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
     <p style="text-align: left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
 
-    Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
+    Note: You need to be part of the organization and have write access to at least one repository to configure reminders for this organization. 
 
-3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
+3. This will launch a new popup where you will see a bunch of settings to configure your reminders. 
     <p style="text-align: left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
 
    - Days: Choose what days of the week would you like to get the reminders
@@ -296,10 +296,10 @@ Here are the steps to configure reminders for your pending pull requests.
    - Teams filter: Filter the reminders by the teams on which the pull request are pending
    - Repositories: Choose for which repos you want to get reminders 
 
-    Then you have bunch of advanced options like:
+    Then you have a bunch of advanced options like:
    - Ignore drafts
    - Require review requests: Would you want to get reminders for all the prs or only for ones that need review
-   - Remind authors after reviews: Do you want to get reminders after multipler reviews
+   - Remind authors after reviews: Do you want to get reminders after multiplier reviews
    - Approved pull requests: Do you want to get reminders for approved pull requests as well
    - Minimum age and Minimum staleness of the PRs
    - Ignore terms in the title
@@ -325,7 +325,7 @@ You can configure similar reminders in your personal chat too. However, unlike c
 2. This will show all the reminders configured for this organization in your personal app and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
     <p style="text-align: left"><img width="500" alt="Personal Create Reminder" src="images/PersonalCreateReminder.PNG"></p>
 
-3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
+3. This will launch a new popup where you will see a bunch of settings to configure your reminders. 
     <p style="text-align: left"><img width="500" alt="Personal Reminder UI" src="images/PersonalReminderUI.PNG"></p>
 
    - Days: Choose what days of the week would you like to get the reminders
@@ -342,7 +342,7 @@ You can configure similar reminders in your personal chat too. However, unlike c
 `schedule list`
 
 **Note** : Please note that there is a minor bug on MSTeams adaptive card platform that effects the edit flow for the schedule reminders. 
-In your channel, if you had selected specific repos or teams to filter your reminders when you create,  and later if you try to reopen and edit the reminder, the previous selection of repos or team is not shown in the UI. So, if you are making any changes to the reminder, we suggest you to re-enter the teams/repos again. Incase if your reminder targets 'All repos' and/or 'All teams' in your org, then you will not face this bug. We apologise for this inconvinience. We are following up with MS Teams platform to resolve this issue.
+In your channel, if you had selected specific repos or teams to filter your reminders when you create,  and later if you try to reopen and edit the reminder, the previous selection of repos or team is not shown in the UI. So, if you are making any changes to the reminder, we suggest you to re-enter the teams/repos again. In case if your reminder targets 'All repos' and/or 'All teams' in your org, then you will not face this bug. We apologise for this inconvenience. We are following up with MS Teams platform to resolve this issue.
 
 
 ### Command reference
@@ -392,7 +392,7 @@ The data residency version of the Microsoft Teams app can be installed from AppS
 ## GHES Integration
 We are announcing GA for GHES integration with Microsoft Teams with GHES 3.8. 
 
-With this integration, you will now be able to subscribe to your repositories in your GHES instance and get live updates about your Issues, PRs, Commits and Deployments in your MS teams channels and personal app. And you can also take actions like commenting, open/close issues and approve your deployments directly from chat. 
+With this integration, you will now be able to subscribe to your repositories in your GHES instance and get live updates about your Issues, PRs, Commits and Deployments in your MS Teams channels and personal app. And you can also take actions like commenting, open/close issues and approve your deployments directly from chat. 
 
 ### How does this integration work?
 Starting with GHES 3.8, we are shipping a dedicated ChatOps service bundled along with your GHES server. And you can choose to integrate with Microsoft Teams. With our integration for GHES, you will have
@@ -410,9 +410,9 @@ The existing GitHub app you see in the app store can only be used for GHEC (host
     ![image3](https://user-images.githubusercontent.com/9424117/223645857-b115adba-558e-4b2f-9363-d6b5da0c9c59.png)
   
 2. Select the checkbox Enable GitHub Chat Integration
-3. Select MS teams tab
+3. Select MS Teams tab
 4. Register application on Azure portal by going to the link mentioned.
-5. Enter your application registration name and for account type select “Multi-tenant” and click “Register 
+5. Enter your application registration name and for account type select “Multi-tenant” and click “Register”
   
     ![image2](https://user-images.githubusercontent.com/9424117/223646172-d57582fa-ee33-4e0c-897f-f79c33838956.png)
   
@@ -441,9 +441,9 @@ The existing GitHub app you see in the app store can only be used for GHEC (host
   
     <img width="1130" height="538" alt="image" src="https://github.com/user-attachments/assets/c87b26cb-168c-43cf-88d0-7c7e6bf02329" />
 
-13. Upload the manifest to MS teams app. Steps [here](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-app) 
+13. Upload the manifest to MS Teams app. Steps [here](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-app) 
 
-And now you have a dedicated GHES integration with Microsoft teams. All the features that are available in our hosted GitHub integration (GHEC) will be available in GHES integration.
+And now you have a dedicated GHES integration with Microsoft Teams. All the features that are available in our hosted GitHub integration (GHEC) will be available in GHES integration.
 
 ## Questions? Need help?
 If you need support or help please fill out GitHub's [Support form](https://support.github.com/contact?legacy&source=subtitle&tags=rr-general-technical&subject%5D=Re:Microsoft%20Teams%20Integration) and your request will be routed to the right team at GitHub.
