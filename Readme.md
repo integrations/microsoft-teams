@@ -9,8 +9,7 @@ Developers spend a considerable amount of time communicating with the team, moni
 GitHub integration for Microsoft Teams is now GA and is built and maintained by GitHub.
 
 ## Table of Contents
-- [Installing the GitHub integration for Teams](#installing-the-github-integration-for-teams)
-  - [Requirements](#requirements)
+- [Installing the GitHub integration for Teams](#installing-gitHub-notifications-for-teams)
   - [Installation](#installation)
  - [Get Started](#get-started)
    - [Subscribe notifications](#subscribe-notifications)
@@ -28,8 +27,7 @@ GitHub integration for Microsoft Teams is now GA and is built and maintained by 
    - [Authorization](#authorization)
 - [GHEC Integration](#ghec-integration)
 - [GHES Integration](#ghes-integration)
-- [Future work](#future-work)
-- [Feedback](#feedback)
+
 --------
 ## Installing GitHub Notifications for Teams
 ### Installation
