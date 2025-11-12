@@ -280,40 +280,38 @@ Here are the steps to configure reminders for your pending pull requests.
 1. From Teams' channel, the user needs to run can run following command to configure a reminder for pending pull requests on your Organization.
 `@GitHub Notifications schedule organization`
 
-Note: Schedule reminders feature is available only for organizations (not for user accounts). And for free organizations, you can only configure reminders for public repositores. However, if you have a paid plan, you can also configure reminders for private repositories in your organization.
-
+    Note: Schedule reminders feature is available only for organizations (not for user accounts). And for free organizations, you can only configure reminders for public repositores. However, if you have a paid plan, you can also configure reminders for private repositories in your organization.
 
 2. This will show all the reminders configured for this organization in this channel and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
-<p style="text-align: left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
+    <p style="text-align: left"><img width="500" alt="Create Reminder" src="images/CreateReminder.png"></p>
 
-Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
+    Note: You need to be part of the organization and have write access to atleast one repository to configure reminders for this organization. 
 
 3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
-<p style="text-align: left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
+    <p style="text-align: left"><img width="500" alt="Reminder UI" src="images/ReminderUI.png"></p>
 
-- Days: Choose what days of the week would you like to get the reminders
-- Times: Choose what times of day would you like to get reminders
-- Timezone: You can choose the timezone 
-- Teams filter: Filter the reminders by the teams on which the pull request are pending
-- Repositories: Choose for which repos you want to get reminders 
+   - Days: Choose what days of the week would you like to get the reminders
+   - Times: Choose what times of day would you like to get reminders
+   - Timezone: You can choose the timezone 
+   - Teams filter: Filter the reminders by the teams on which the pull request are pending
+   - Repositories: Choose for which repos you want to get reminders 
 
-Then you have bunch of advanced options like:
-- Ignore drafts
-- Require review requests: Would you want to get reminders for all the prs or only for ones that need review
-- Remind authors after reviews: Do you want to get reminders after multipler reviews
-- Approved pull requests: Do you want to get reminders for approved pull requests as well
-- Minimum age and Minimum staleness of the PRs
-- Ignore terms in the title
-- Ignore labels
-- Required labels
+    Then you have bunch of advanced options like:
+   - Ignore drafts
+   - Require review requests: Would you want to get reminders for all the prs or only for ones that need review
+   - Remind authors after reviews: Do you want to get reminders after multipler reviews
+   - Approved pull requests: Do you want to get reminders for approved pull requests as well
+   - Minimum age and Minimum staleness of the PRs
+   - Ignore terms in the title
+   - Ignore labels
+   - Required labels
 
-All of the above settings will ensure you get reminders for the pull request that need your attention and there is no unnecessary noise in the channel.
-
+     All of the above settings will ensure you get reminders for the pull request that need your attention and there is no unnecessary noise in the channel.
 
 4. You can edit or remove reminders for a specific organization by running the following command
 `@GitHub Notifications schedule organization`
-<p style="text-align: left"><img width="500" alt="ListReminders" src="images/ListReminders.png"></p>
-This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
+    <p style="text-align: left"><img width="500" alt="ListReminders" src="images/ListReminders.png"></p>
+    This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
 
 5. You can get the list of reminders configured in a channel by running
 `@GitHub Notifications schedule list`
@@ -325,20 +323,20 @@ You can configure similar reminders in your personal chat too. However, unlike c
 `schedule organization`
 
 2. This will show all the reminders configured for this organization in your personal app and also gives you an option to create a new reminder. If you are just getting started, you can see that no reminders are created for this channed. And you can get started by clicking on 'Create new reminder'.
-<p style="text-align: left"><img width="500" alt="Personal Create Reminder" src="images/PersonalCreateReminder.PNG"></p>
+    <p style="text-align: left"><img width="500" alt="Personal Create Reminder" src="images/PersonalCreateReminder.PNG"></p>
 
 3. This will launch a new popup where you will see bunch of settings to configure your reminders. 
-<p style="text-align: left"><img width="500" alt="Personal Reminder UI" src="images/PersonalReminderUI.PNG"></p>
+    <p style="text-align: left"><img width="500" alt="Personal Reminder UI" src="images/PersonalReminderUI.PNG"></p>
 
-- Days: Choose what days of the week would you like to get the reminders
-- Times: Choose what times of day would you like to get reminders
-- Reminders pending on your team
-- Reminders pending on you
+   - Days: Choose what days of the week would you like to get the reminders
+   - Times: Choose what times of day would you like to get reminders
+   - Reminders pending on your team
+   - Reminders pending on you
 
 4. You can edit or remove reminders for a specific organization by running the following command
 `schedule organization`
-<p style="text-align: left"><img width="500" alt="Personal List Reminders" src="images/PersonalListReminders.PNG"></p>
-This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
+    <p style="text-align: left"><img width="500" alt="Personal List Reminders" src="images/PersonalListReminders.PNG"></p>
+    This will list all the reminders configured for the organization in this channel. You can choose to edit or delete them.
 
 5. You can get the list of reminders configured in a channel by running
 `schedule list`
@@ -409,39 +407,39 @@ The existing GitHub app you see in the app store can only be used for GHEC (host
 
 1. Navigate to "your-ghes-url:8443" and go to section “Chat Integrations”
   
-  ![image3](https://user-images.githubusercontent.com/9424117/223645857-b115adba-558e-4b2f-9363-d6b5da0c9c59.png)
+    ![image3](https://user-images.githubusercontent.com/9424117/223645857-b115adba-558e-4b2f-9363-d6b5da0c9c59.png)
   
 2. Select the checkbox Enable GitHub Chat Integration
 3. Select MS teams tab
 4. Register application on Azure portal by going to the link mentioned.
 5. Enter your application registration name and for account type select “Multi-tenant” and click “Register 
   
-  ![image2](https://user-images.githubusercontent.com/9424117/223646172-d57582fa-ee33-4e0c-897f-f79c33838956.png)
+    ![image2](https://user-images.githubusercontent.com/9424117/223646172-d57582fa-ee33-4e0c-897f-f79c33838956.png)
   
 6. Take note of application ID and tenant ID
 
-  <img width="1227" height="358" alt="image" src="https://github.com/user-attachments/assets/03338bf8-5b90-435e-9373-519e6a51b550" />
+    <img width="1227" height="358" alt="image" src="https://github.com/user-attachments/assets/03338bf8-5b90-435e-9373-519e6a51b550" />
   
 7. Click on “Certificates & secret” and generate a new client secret.
 8. Take note of application ID, tenant ID and client secret and navigate back GHES instance settings
 9. Click on Deploy to Azure button
   
-  <img width="609" alt="image7" src="https://user-images.githubusercontent.com/9424117/223646342-83542888-e97d-494f-b2b5-89e4098496ff.png">
+    <img width="609" alt="image7" src="https://user-images.githubusercontent.com/9424117/223646342-83542888-e97d-494f-b2b5-89e4098496ff.png">
   
 10. Select the subscription and resource group for Azure bot to be deployed. Enter the GHES hostname, the app ID and tenant ID previously generated and click Review + create.
 
     - If your GitHub Enterprise instance **is reachable on the public internet** make sure that the `Append '_msteams' to path` option is **checked**.
     - If your GitHub Enterprise instance **is not reachable on the public internet and requires a proxy** make sure that the `Append '_msteams' to path` option is **unchecked**. Also, enter the URL that will forward the traffic to the instance in `GHES Instance Host Name`.
   
-  <img width="725" height="661" alt="image" src="https://github.com/user-attachments/assets/2ad2896b-5bc4-4bed-bce5-c2e6017fa905" />
+    <img width="725" height="661" alt="image" src="https://github.com/user-attachments/assets/2ad2896b-5bc4-4bed-bce5-c2e6017fa905" />
 
 11. Once the bot is provisioned. Return to the settings page and enter the app ID, tenant ID and client secret. If the GHES endpoint is not reachable on public internet and the traffic is going to be forwarded enter that URL in `Public Endpoint URL`. Click on Save client settings. 
   
-  <img width="979" height="589" alt="image" src="https://github.com/user-attachments/assets/ded71524-92a1-4930-9c8a-c2c871b5a6e1" />
+    <img width="979" height="589" alt="image" src="https://github.com/user-attachments/assets/ded71524-92a1-4930-9c8a-c2c871b5a6e1" />
   
 12. Once the settings are saved download the manifest from the generate manifest button. Click on green Save settings to persist the settings on the instance. Once settings are applied (could take 5-15 mins depending on the configuration). 
   
-  <img width="1130" height="538" alt="image" src="https://github.com/user-attachments/assets/c87b26cb-168c-43cf-88d0-7c7e6bf02329" />
+    <img width="1130" height="538" alt="image" src="https://github.com/user-attachments/assets/c87b26cb-168c-43cf-88d0-7c7e6bf02329" />
 
 13. Upload the manifest to MS teams app. Steps [here](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-app) 
 
